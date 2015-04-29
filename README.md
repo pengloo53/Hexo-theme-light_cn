@@ -1,14 +1,15 @@
-# Light-l
+# light-ch
 
 The Hexo theme base on hexo-theme-light
-基于hexo默认主题Light的国内版，所谓国内版就是去google服务、去facebook、去addthis等严重影响访问速度的服务，替换成百度分享、多说评论等国内服务。
+
+> 基于hexo默认主题Light的国内版，所谓国内版就是去google服务、去facebook、去addthis等严重影响访问速度的服务，替换成百度分享、多说评论等国内服务。
 
 ## Install
 
 Execute the following command and modify `theme` in `_config.yml` to `light`.
 
 ```
-git clone https://github.com/pengloo53/hexo-theme-light-l themes/light-l
+git clone https://github.com/pengloo53/light-ch themes/light-ch
 ```
 
 ## Update
@@ -16,7 +17,7 @@ git clone https://github.com/pengloo53/hexo-theme-light-l themes/light-l
 Execute the following command to update Light.
 
 ```
-cd themes/light
+cd themes/light-ch
 git pull
 ```
 
