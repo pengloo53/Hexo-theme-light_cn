@@ -1,0 +1,43 @@
+menu:
+  Home: /
+  Archives: /archives
+  Categories: /category
+
+widgets:
+- search
+- category
+- tag
+
+excerpt_link: Read More
+
+twitter:
+  username:
+  show_replies: false
+  tweet_count: 5
+
+baidu_share: true
+
+addthis:
+  enable: false
+  pubid:
+  facebook: true
+  twitter: true
+  google: true
+  pinterest: true
+
+#fancybox: false
+
+#google_analytics: false
+rss:
+
+duoshuo:
+  enable: true
+  short_name: pengloo53
+
+#comment_provider: facebook
+# Facebook comment
+#facebook: false
+#  appid: 123456789012345
+#  comment_count: 5
+#  comment_width: 840
+#  comment_colorscheme: light
