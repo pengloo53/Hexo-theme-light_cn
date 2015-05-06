@@ -1,7 +1,6 @@
 menu:
   Home: /
   Archives: /archives
-  Categories: /category
 
 widgets:
 - search

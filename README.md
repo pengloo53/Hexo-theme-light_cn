@@ -1,6 +1,6 @@
 # light-ch
 
-The Hexo theme base on hexo-theme-light
+The Hexo theme base on [hexo-theme-light]()
 
 > 基于hexo默认主题Light的国内版，所谓国内版就是去google服务、去facebook、去addthis等严重影响访问速度的服务，替换成百度分享、多说评论等国内服务。
 
