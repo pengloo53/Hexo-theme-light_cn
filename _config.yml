@@ -33,6 +33,10 @@ duoshuo:
   enable: true
   short_name: pengloo53
 
+wumii: 
+  enable: true
+  siteprefix: http://www.linux2me.com
+  
 #comment_provider: facebook
 # Facebook comment
 #facebook: false

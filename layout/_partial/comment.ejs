@@ -1,35 +1,17 @@
 <% if (page.comments){ %>
-<!-- <section id="comment">
-  <h1 class="title"><%= __('comment') %></h1> -->
+<section id="comment">
+<!--   <h1 class="title"><%= __('comment') %></h1> -->
 
-<!--   <% if (theme.comment_provider == "facebook") {
+<% if (theme.comment_provider == "facebook") {
       if (theme.facebook) { %>
-      <%- partial('_partial/facebook_comment', {fbConfig: theme.facebook}) %>
+      <%- partial('post/facebook_comment', {fbConfig: theme.facebook}) %>
       <% } %>
   <% } else if(config.disqus_shortname) { %>
   <div id="disqus_thread">
     <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
-  <% } %> -->
-
-
-  <% if(theme.duoshuo.enable){ %>
-  <!-- 多说评论框 start -->
-  <div class="ds-thread" data-thread-key="<%= page.path %>" data-title="<%= page.title %>" data-url="<%= page.permalink %>"></div>
-  <!-- 多说评论框 end -->
-  <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-  <script type="text/javascript">
-  var duoshuoQuery = {short_name:<%= theme.duoshuo.short_name%>};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/ embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0] 
-       || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-    </script>
-  <!-- 多说公共JS代码 end -->
+  <% } else if(theme.duoshuo.enable){ %>
+    <%- partial('post/duoshuo')%>
   <% } %>
-<!-- </section> -->
+</section>
 <% } %>
