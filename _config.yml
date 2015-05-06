@@ -1,32 +1,17 @@
 menu:
-  Home: /
-  Archives: /archives
+  首页: /
+  归档: /archives
 
 widgets:
 - search
 - category
 - tag
+- tagcloud
 
 excerpt_link: Read More
 
-twitter:
-  username:
-  show_replies: false
-  tweet_count: 5
-
 baidu_share: true
 
-addthis:
-  enable: false
-  pubid:
-  facebook: true
-  twitter: true
-  google: true
-  pinterest: true
-
-#fancybox: false
-
-#google_analytics: false
 rss:
 
 duoshuo:
@@ -36,7 +21,7 @@ duoshuo:
 wumii: 
   enable: true
   siteprefix: http://www.linux2me.com
-  
+
 #comment_provider: facebook
 # Facebook comment
 #facebook: false
@@ -44,3 +29,7 @@ wumii:
 #  comment_count: 5
 #  comment_width: 840
 #  comment_colorscheme: light
+
+#fancybox: false
+
+#google_analytics: false

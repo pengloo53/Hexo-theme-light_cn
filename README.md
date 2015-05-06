@@ -1,79 +1,57 @@
 # light-ch
 
-The Hexo theme base on [hexo-theme-light]()
+基于主题hexo默认主题[hexo-theme-light](https://github.com/hexojs/hexo-theme-light)
 
 > 基于hexo默认主题Light的国内版，所谓国内版就是去google服务、去facebook、去addthis等严重影响访问速度的服务，替换成百度分享、多说评论等国内服务。
 
-## Install
+## 安装
 
-Execute the following command and modify `theme` in `_config.yml` to `light`.
+执行下面命令，然后修改`_config.yml`配置文件中`theme`为 `light-ch`.
 
 ```
 git clone https://github.com/pengloo53/light-ch themes/light-ch
 ```
 
-## Update
-
-Execute the following command to update Light.
+## 更新主题
 
 ```
 cd themes/light-ch
 git pull
 ```
 
-## Config
+## 配置
 
-Default config:
+默认:
 
 ``` yaml
 menu:
-  Home: /
-  Archives: /archives
+  首页: /
+  归档: /archives
 
 widgets:
 - search
 - category
 - tag
-- twitter
+- tagcloud
 
 excerpt_link: Read More
 
-twitter:
-  username:
-  show_replies: false
-  tweet_count: 5
+baidu_share: true
 
-addthis:
-  enable: true
-  pubid:
-  facebook: true
-  twitter: true
-  google: true
-  pinterest: true
-
-fancybox: true
-
-google_analytics:
 rss:
+
+duoshuo:
+  enable: true
+  short_name: pengloo53
+
+wumii: 
+  enable: true
+  siteprefix: http://www.linux2me.com
 ```
 
-- **menu** - Main navigation menu
-- **widget** - Widgets displaying in sidebar
-- **excerpt_link** - "Read More" link text at the bottom of excerpted articles
-- **twitter** - Twitter widget config
-  - **username** - Twitter username
-  - **show_replies** - Enable displaying replies
-  - **tweet_count** - Tweets display in widget
-- **addthis** - Share buttons at the buttom of articles (Powered by [AddThis])
-  - **enable** - Enable share buttons
-  - **pubid** - Profile ID of [AddThis]
-  - **facebook** - Enable Facebook button
-  - **twitter** - Enable Twitter button
-  - **google** - Enable Google+ button
-  - **pinterest** - Enable Pinterest button
-- **fancybox** - Enable [Fancybox]
-- **google_analytics** - Google Analytics ID
-- **rss** - RSS subscription link (change if using Feedburner)
+- `baidu_share` 百度分享
+- `duoshuo` 多说评论
+- `wumii` 无觅关联
 
 ## Features
 
