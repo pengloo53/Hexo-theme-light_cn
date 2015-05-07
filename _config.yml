@@ -14,21 +14,16 @@ baidu_share: true
 
 rss:
 
+# 评论提供可以选择 duoshuo 或者 wumii，无需评论，此处不填就行。
+comment_provider: wumii
+
 duoshuo:
-  enable: true
   short_name: pengloo53
 
 wumii: 
-  enable: true
+  relateditems: true
   siteprefix: http://www.linux2me.com
 
-#comment_provider: facebook
-# Facebook comment
-#facebook: false
-#  appid: 123456789012345
-#  comment_count: 5
-#  comment_width: 840
-#  comment_colorscheme: light
 
 #fancybox: false
 
