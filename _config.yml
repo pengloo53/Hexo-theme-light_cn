@@ -1,6 +1,7 @@
 menu:
   首页: /
   归档: /archives
+  关于我: /about
 
 widgets:
 - search
@@ -9,7 +10,7 @@ widgets:
 - tagcloud
 
 excerpt_link: Read More
-
+avatar: /assets/img/avatar/avatar.jpg
 baidu_share: true
 
 rss:
