@@ -6,6 +6,7 @@ menu:
 widgets:
 - search
 - category
+- archive
 - tag
 - tagcloud
 
