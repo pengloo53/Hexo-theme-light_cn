@@ -1,13 +1,14 @@
 menu:
   首页: /
-  归档: /archives
+  # 归档: /archives
   关于我: /about
+  代办事项: /to-do
 
 widgets:
 - search
 - category
 - archive
-- tag
+# - tag
 - tagcloud
 
 excerpt_link: Read More
@@ -17,7 +18,7 @@ baidu_share: true
 rss:
 
 # 评论提供可以选择 duoshuo 或者 wumii，无需评论，此处不填就行。
-comment_provider: wumii
+comment_provider: duoshuo
 
 duoshuo:
   short_name: pengloo53
