@@ -10,12 +10,20 @@ widgets:
 - archive
 # - tag
 - tagcloud
+- weibo
 
 excerpt_link: Read More
 avatar: /assets/img/avatar/avatar.jpg
 baidu_share: true
+baidu_tongji: true
 
 rss:
+
+# enable是否开启；height小挂件高度；url替换成自己的微博挂件地址
+weibo:
+  enable: true
+  height: 660
+  url: http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=660&fansRow=1&ptype=1&speed=0&skin=1&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=1934606495&verifier=a6769878&dpc=1
 
 # 评论提供可以选择 duoshuo 或者 wumii，无需评论，此处不填就行。
 comment_provider: duoshuo

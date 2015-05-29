@@ -1,0 +1,8 @@
+<% if (theme.weibo.enable){ %>
+  <div class="widget">
+    <h3 class="title">我的微博</h3>
+      <ul class="weibo">
+	<iframe width="100%" height="<%= theme.weibo.height%>" class="share_self"  frameborder="0" scrolling="no" src="<%= theme.weibo.url %>"></iframe>
+      </ul>
+  </div>
+<% } %>
