@@ -1,0 +1,31 @@
+.toc-article {
+	background: #eee;
+	margin: .5em;
+	padding: 1em
+}
+ 
+.toc-article strong {
+	padding: .3em 0
+}
+ 
+#toc {
+	line-height: 1em;
+	font-size: .8em;
+	float: right
+}
+ 
+#toc .toc {
+	padding: 0
+}
+ 
+#toc .toc li {
+	list-style-type: none
+}
+ 
+#toc ol {
+	margin-left: 0
+}
+ 
+#toc .toc-child {
+	padding-left: 1.5em
+}
