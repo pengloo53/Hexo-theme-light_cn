@@ -1,16 +1,19 @@
 .toc-article {
 	background: #eee;
 	margin: .5em;
-	padding: 1em
+	padding: 1em;
+	position: relative;
+	left:3em;
 }
  
-.toc-article strong {
-	padding: .3em 0
+.toc-article .toc-title{
+	padding-bottom: 0.8em;
+	font-weight: bold;
 }
  
 #toc {
-	line-height: 1em;
-	font-size: .8em;
+	line-height: 1.1em;
+	font-size: 0.8em;
 	float: right
 }
  
@@ -23,7 +26,7 @@
 }
  
 #toc ol {
-	margin-left: 0
+	margin: 0;
 }
  
 #toc .toc-child {
