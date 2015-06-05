@@ -5,6 +5,7 @@
 [Demo](http://www.linux2me.com)
 
 ![](001.png)
+![](002.png)
 
 ##改造点
 
