@@ -1,6 +1,6 @@
 # light-ch（Hexo主题）
 
-> 该主题是基于hexo默认主题[hexo-theme-light](https://github.com/hexojs/hexo-theme-light)的一个国内适用版。
+> 该主题是基于hexo默认主题[hexo-theme-light](https://github.com/hexojs/hexo-theme-light)的一个china适用版。
 
 [Demo](http://www.linux2me.com)
 
