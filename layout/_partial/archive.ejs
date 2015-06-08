@@ -8,11 +8,6 @@ if (page.archive){
 }
 %>
 
-<% if (pagination == 2){ %>
-   <% page.posts.each(function(item){ %>
-    <%- partial('article', {item: item, index: true}) %>
-  <% }); %> 
-<% } else { %>
 <h2 class="archive-title<% if (page.tag){ %> tag<% } else if (page.category){ %> category<% } %>"><%= title %></h2>
   <div class="archive">
     <% page.posts.each(function(item){ %>
@@ -35,6 +30,4 @@ if (page.archive){
       </article>
     <% }); %>
   </div>
-<% } %>
-
 <%- partial('pagination') %>

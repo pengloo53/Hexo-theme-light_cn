@@ -4,9 +4,7 @@
   <% } %>
   <div class="post-content">
     <header>
-        <div class="icon"></div>
-        <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a></time>
-        <%- partial('post/title') %>
+      <h1>个人简历</h1>
     </header>
     <div class="entry">
       <% if (item.excerpt && index){ %>
@@ -38,7 +36,3 @@
     </footer>
   </div>
 </article>
-<%- partial('post/wumii') %>
-<%- partial('post/comment') %>
-
-

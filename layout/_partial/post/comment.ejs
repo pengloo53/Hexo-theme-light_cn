@@ -3,9 +3,9 @@
 <!--   <h1 class="title"><%= __('comment') %></h1> -->
 
 <% if(theme.comment_provider == 'duoshuo'){ %>
-    <%- partial('post/duoshuo')%>
+    <%- partial('duoshuo')%>
   <% } else if(theme.comment_provider == 'wumii'){%>
-    <%- partial('post/wumiicomments')%>
+    <%- partial('wumiicomments')%>
   <% } %>
 </section>
 <% } %>
