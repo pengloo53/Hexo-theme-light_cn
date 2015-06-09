@@ -1,9 +1,9 @@
 menu:
   首页: /
   # 归档: /archives
-  关于我: /about
+  # 关于我: /about
   自定义: /customization
-  # 个人简历: /resume
+  个人简历: /resume
 
 widgets:
 # - search

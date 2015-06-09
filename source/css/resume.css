@@ -1,0 +1,53 @@
+.resume{
+	margin: 0 auto;
+	padding: 30px;
+	background-color: #FFF;
+	line-height: 1.6;
+	width: 800px;
+
+}
+
+.resume h1,h2,h3{
+	font-weight: bold;
+      	border-bottom: 1px solid color-border;
+      	margin-bottom: 10px;
+     	margin-top: 20px;
+}
+
+.resume p, blockquote, table, iframe, h3, h4, h5, h6 {
+	margin-top: 15px;
+}
+
+.resume-entry{
+	width: 100%;
+	margin-left: 200px;
+}
+
+.resume-entry ul,ol li {
+	margin-left: 20px;
+}
+
+.resume-left{
+	float: left;
+	width: 150px;
+	height: 100%;
+}
+
+.resume-left img{
+	max-width: 100%;
+	margin:20px 0;
+}
+
+.resume-left .strong{
+	font-weight: bold;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.resume-left ul li{
+	list-style: none;
+}
+
+.resume-left span{
+	font-style: italic;
+}

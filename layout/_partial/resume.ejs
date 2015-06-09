@@ -1,38 +1,10 @@
-<article class="<%= item.layout %>">
-  <% if (item.photos && item.photos.length){ %>
-    <%- partial('post/gallery') %>
-  <% } %>
-  <div class="post-content">
-    <header>
-      <h1>个人简历</h1>
-    </header>
-    <div class="entry">
-      <% if (item.excerpt && index){ %>
-        <%- item.excerpt %>
-      <% } else { if (item.toc !== false) {%>
-        <%- partial('post/toc') %>
-      <% } %>
-        <%- item.content %>
-      <% } %>
+<div class="resume">
+    <div class="resume-left">
+      <img src="/assets/img/avatar/psb.jpg" alt="photo">
+          <span>Email:</span>
+          <a href="#">1911986273@qq.com</a>
     </div>
-    <footer>
-      <% if (index){ %>
-        <% if (item.excerpt){ %>
-          <div class="alignleft">
-            <a href="<%- config.root %><%- item.path %>#more" class="more-link"><%= theme.excerpt_link %></a>
-          </div>
-        <% } %>
-        <% if (item.comment && config.disqus_shortname){ %>
-        <div class="alignright">
-          <a href="<%- item.permalink %>#disqus_thread" class="comment-link">Comments</a>
-        </div>
-        <% } %>
-      <% } else { %>
-        <%- partial('post/category') %>
-        <%- partial('post/tag') %>
-        <%- partial('post/share') %>
-      <% } %>
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
+    <div class="resume-entry">
+        <%- page.content %>
+    </div>
+</div>
