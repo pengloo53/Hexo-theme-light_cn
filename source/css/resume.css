@@ -7,14 +7,14 @@
 
 }
 
-.resume h1,h2,h3{
+.resume h1, .resume h2, .resume h3{
 	font-weight: bold;
       	border-bottom: 1px solid color-border;
       	margin-bottom: 10px;
      	margin-top: 20px;
 }
 
-.resume p, blockquote, table, iframe, h3, h4, h5, h6 {
+.resume p{
 	margin-top: 15px;
 }
 
