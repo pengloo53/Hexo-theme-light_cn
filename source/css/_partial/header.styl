@@ -12,6 +12,15 @@
     height 4.5em
     float left
     margin 0 0.8em
+    transition height 1s, transform 1s
+    &:hover
+      height 9em
+      transform rotate(360deg)
+      -ms-transform rotate(360deg)  /* IE 9 */
+      -webkit-transform rotate(360deg) /* Safari and Chrome */
+      -o-transform rotate(360deg)    /* Opera */
+      -moz-transform rotate(360deg)    /* Firefox */
+
 
   h1
     font-weight normal
