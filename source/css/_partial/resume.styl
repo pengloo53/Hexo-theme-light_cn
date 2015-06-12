@@ -1,10 +1,24 @@
 .resume{
 	margin: 0 auto;
-	padding: 30px;
 	background-color: #FFF;
 	line-height: 1.6;
 	width: 800px;
+	@media screen and (max-width: 860px){
+		width: 100%;
+	}
+}
 
+.resume-content{
+	float: right;
+	width: 580px;
+	@media screen and (max-width: 860px) {
+		width: 100%;
+		margin-left: -210px;
+	}
+	@media screen and (max-width: 500px){
+		margin-left: 0;
+		float: none;
+	}
 }
 
 .resume h1, .resume h2, .resume h3{
@@ -19,7 +33,15 @@
 }
 
 .resume-entry{
-	margin-left: 200px;
+	margin: 30px;
+	@media screen and (max-width: 860px) {
+		margin-left: 200px;
+	}	
+	@media screen and (max-width: 500px){
+		padding-left: 30px;
+		margin-left: 0px;
+	}
+
 }
 
 .resume-entry ul,ol li {
@@ -29,7 +51,11 @@
 .resume-left{
 	float: left;
 	width: 150px;
-	height: 100%;
+	margin: 30px;
+	@media screen and (max-width: 500px){
+		float: none;
+		margin: 0 auto;
+	}	
 }
 
 .resume-left img{
