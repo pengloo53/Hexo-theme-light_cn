@@ -15,7 +15,7 @@
 
 ##添加的新功能
 
-1. Header添加头像
+1. Header添加头像，并添加增大动画效果
 2. 添加新浪微博widgets
 2. 添加归档widgets
 3. 添加toTop（回到顶部）功能
@@ -84,6 +84,7 @@ wumii:
   siteprefix: http://www.linux2me.com
 ```
 
+- `avatar` 头像URL
 - `baidu_share` 百度分享
 - `weibo` 新浪微博
 - `duoshuo` 多说评论
