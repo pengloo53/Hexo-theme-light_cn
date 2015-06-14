@@ -20,7 +20,7 @@
 2. 添加归档widgets
 3. 添加toTop（回到顶部）功能
 4. 添加toc（文章目录）功能
-5. 添加个人简历Layout`(待完成)`
+5. 添加个人简历Layout（便于设计自己的页面）
 
 
 ## 安装
@@ -45,30 +45,47 @@ git pull
 ``` yaml
 menu:
   首页: /
-  归档: /archives
+  # 归档: /archives
+  # 关于我: /about
+  自定义: /customization
+  个人简历: /resume
 
 widgets:
-- search
+# - search
 - category
-- tag
+- archive
+# - tag
 - tagcloud
+- weibo
 
 excerpt_link: Read More
-
+avatar: /assets/img/avatar/avatar.jpg
 baidu_share: true
+
+# 请到baidu_tongji.ejs中替换代码
+baidu_tongji: true
 
 rss:
 
-duoshuo:
+# enable是否开启；height小挂件高度；url替换成自己的微博挂件地址
+weibo:
   enable: true
+  height: 660
+  url: Your url
+
+# 评论提供可以选择 duoshuo 或者 wumii，无需评论，此处不填就行。
+comment_provider: duoshuo
+
+duoshuo:
   short_name: pengloo53
 
 wumii: 
-  enable: true
+  relateditems: false
   siteprefix: http://www.linux2me.com
 ```
 
 - `baidu_share` 百度分享
+- `weibo` 新浪微博
 - `duoshuo` 多说评论
 - `wumii` 无觅关联
 
