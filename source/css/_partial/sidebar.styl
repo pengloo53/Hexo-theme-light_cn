@@ -18,10 +18,18 @@
     .entry
       font-size 0.9em
       padding 15px 20px
-      .list-2
-        margin-left 15px
+
+    .category-list
+      font-size 0.9em
+      padding 15px 20px 
+      .category-list-count
+        margin-left 8px
+        font-size 0.8em
+        color color-meta
         &:before
-          content '-> '
+          content '('
+        &:after
+          content ')'
 
     .archive-list
       font-size 0.9em
@@ -38,8 +46,9 @@
     ul, ol, dl
       list-style none
       ul, ol, dl
-        list-style disc
         margin-left 20px
+        li:before
+          content "-> "
 
   .search
     margin-bottom 30px

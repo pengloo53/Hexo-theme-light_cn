@@ -1,14 +1,13 @@
 <% if (site.categories.length){ %>
 <div class="widget tag">
   <h3 class="title"><%= __('categories') %></h3>
-  <ul class="entry">
-  <% site.categories.sort('name').each(function(item){ %>
+<!--   <% site.categories.sort('name').each(function(item){ %>
 	<% if(item.parent) {%>
 		<li><a class = "list-2"href="<%- config.root %><%- item.path %>"><%= item.name %></a><small><%= item.posts.length %></small></li>
      <% }else{%>
 		<li><a href="<%- config.root %><%- item.path %>"><%= item.name %></a><small><%= item.posts.length %></small></li>
 	<% } %>
-  <% }); %>
-  </ul>
+  <% }); %> -->
+     <%- list_categories(site.categories) %> 
 </div>
 <% } %> 
