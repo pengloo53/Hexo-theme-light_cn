@@ -1,7 +1,7 @@
 menu:
   首页: /
   # 归档: /archives
-  # 关于我: /about
+  合集: /collection
   自定义: /customization
   个人简历: /resume
 
@@ -14,6 +14,7 @@ widgets:
 - weibo
 
 excerpt_link: Read More
+comment_link: Comments
 avatar: /assets/img/avatar/avatar.jpg
 baidu_share: true
 
