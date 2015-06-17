@@ -1,14 +1,24 @@
-<img src = "<%= theme.avatar %>">
-<div class="alignleft header-div">
-    <h1><a href="<%- config.root %>"><%= config.title %></a></h1>
-    <h2><a href="<%- config.root %>"><% if (config.subtitle){ %><%= config.subtitle %><% } %></a></h2>
+<div class= "header-content">
+	<div class = "col-one">
+		<img src = "<%= theme.avatar %>">
+		<div class="alignleft header-div">
+		    <h1><a href="<%- config.root %>"><%= config.title %></a></h1>
+		    <h2><a href="<%- config.root %>"><% if (config.subtitle){ %><%= config.subtitle %><% } %></a></h2>
+		</div>
+	</div>
+	<div class = "col-two">
+		
+	</div>
 </div>
-<nav id="main-nav" class="alignright">
-  <ul>
-    <% for (var i in theme.menu){ %>
-      <li><a href="<%- theme.menu[i] %>"><%= i %></a></li>
-    <% } %>
-  </ul>
-  <div class="clearfix"></div>
-</nav>
+
+<div class= "header-nav">
+	<nav id="main-nav" class="alignright">
+	  <ul>
+	    <% for (var i in theme.menu){ %>
+	      <li><a href="<%- theme.menu[i] %>"><%= i %></a></li>
+	    <% } %>
+	  </ul>
+	  <div class="clearfix"></div>
+	</nav>
+</div>
 <div class="clearfix"></div>
