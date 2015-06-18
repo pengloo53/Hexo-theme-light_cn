@@ -5,6 +5,11 @@ menu:
   自定义: /customization
   个人简历: /resume
 
+submenu:
+  归档: /archives
+  自定义: /customization
+  个人简历: /resume  
+
 widgets:
 # - search
 - category
@@ -16,6 +21,7 @@ widgets:
 excerpt_link: Read More
 comment_link: Comments
 avatar: /assets/img/avatar/avatar.jpg
+ad: /assets/img/1.gif
 baidu_share: true
 
 # 请到baidu_tongji.ejs中替换代码

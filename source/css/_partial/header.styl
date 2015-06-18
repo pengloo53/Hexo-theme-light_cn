@@ -3,36 +3,66 @@
   margin-bottom 25px
 
   .header-content
-    padding-left 15px
-    padding-right 15px
     .col-one
-      padding 15px 15px 15px 0
+      padding 25px 0px 25px 0
       width 100%
+      img
+        border-radius 50%
+        height 5em
+        float left
+        margin 0 0.8em
+        transition height 0.3s, transform 1s
+        &:hover
+          height 6em
+          transform rotate(360deg)
+          -ms-transform rotate(360deg)  /* IE 9 */
+          -webkit-transform rotate(360deg) /* Safari and Chrome */
+          -o-transform rotate(360deg)    /* Opera */
+          -moz-transform rotate(360deg)    /* Firefox */
+
+    .col-two
+      margin-left -50%
+      padding 25px 0px 25px 0
+      img
+        height 5em
+        @media screen and (max-width: 600px)
+          display none
 
   .header-nav
     margin-bottom 20px
     padding-left 15px
     padding-right 15px
+    border-top 2px solid #eee
+    border-bottom 2px solid #eee
+
+  #main-nav
+    font-family font-title
+    line-height 2.5em
+    font-size 1.1em
+    ul
+      list-style none
+      li
+        float left
+        display block
+    
+  #sub-nav
+    font-family font-title
+    line-height 2.5em
+    font-size 1.1em
+    @media screen and (max-width: 600px)
+      display none
+    ul
+      list-style none
+      li
+        float right
+        display block
+
   a
     color #999
+    padding 10px 15px
     &:hover
       color color-link
       text-decoration none
-
-  img
-    border-radius 50%
-    height 5em
-    float left
-    margin 0 0.8em
-    transition height 0.3s, transform 1s
-    &:hover
-      height 9em
-      transform rotate(360deg)
-      -ms-transform rotate(360deg)  /* IE 9 */
-      -webkit-transform rotate(360deg) /* Safari and Chrome */
-      -o-transform rotate(360deg)    /* Opera */
-      -moz-transform rotate(360deg)    /* Firefox */
-
 
   h1
     font-weight normal
@@ -45,14 +75,5 @@
     line-height 1
     margin-top 10px
   
-  #main-nav
-    font-family font-title
-    line-height 2.5em
-    font-size 1.1em
-    float right
-    ul
-      list-style none
-      li
-        float left
-        margin-left 30px
-        display block
+
+
