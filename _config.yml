@@ -1,7 +1,6 @@
 menu:
   首页: /
-  # 归档: /archives
-  合集: /collection
+  归档: /archives
   自定义: /customization
   个人简历: /resume
 
