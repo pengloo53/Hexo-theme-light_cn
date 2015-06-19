@@ -1,9 +1,8 @@
 menu:
   首页: /
   # 归档: /archives
-  合集: /collection
-  自定义: /customization
-  个人简历: /resume
+  Linux合集: /categories/Linux
+  Node合集: /categories/Node
 
 submenu:
   归档: /archives
