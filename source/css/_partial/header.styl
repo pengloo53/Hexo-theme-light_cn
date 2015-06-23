@@ -3,8 +3,8 @@
   margin-bottom 25px
 
   .header-content
+    padding 25px 0px 25px 0
     .col-one
-      padding 25px 0px 25px 0
       width 100%
       img
         border-radius 50%
@@ -13,7 +13,7 @@
         margin 0 0.8em
         transition height 0.3s, transform 1s
         &:hover
-          height 6em
+          height 8em
           transform rotate(360deg)
           -ms-transform rotate(360deg)  /* IE 9 */
           -webkit-transform rotate(360deg) /* Safari and Chrome */
@@ -22,7 +22,6 @@
 
     .col-two
       margin-left -50%
-      padding 25px 0px 25px 0
       img
         height 5em
         @media screen and (max-width: 600px)
@@ -39,6 +38,8 @@
     font-family font-title
     line-height 2.5em
     font-size 1.1em
+    a:hover
+      background-color #EEE
     ul
       list-style none
       li

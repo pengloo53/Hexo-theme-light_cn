@@ -1,13 +1,17 @@
 <div class= "header-content">
 	<div class = "alignleft col-one">
-		<img src = "<%= theme.avatar %>">
+		<% if (theme.avatar) { %>
+			<img src = "<%= theme.avatar %>">
+		<% } %>
 		<div class="header-div">
 		    <h1><a href="<%- config.root %>"><%= config.title %></a></h1>
 		    <h2><a href="<%- config.root %>"><% if (config.subtitle){ %><%= config.subtitle %><% } %></a></h2>
 		</div>
 	</div>
 	<div class = "alignright col-two">
-		<img src = "<%= theme.ad %>">
+		<% if (theme.ad){ %>
+			<img src = "<%= theme.ad %>">
+		<% } %>
 	</div>
 	<div class="clearfix"></div>
 </div>

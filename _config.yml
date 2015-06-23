@@ -2,6 +2,7 @@ menu:
   首页: /
   Linux合集: /categories/Linux
   Node合集: /categories/Node
+  Hexo合集: /categories/Hexo
 
 submenu:
   归档: /archives
@@ -18,8 +19,13 @@ widgets:
 
 excerpt_link: Read More
 comment_link: Comments
+
+# header头像
 avatar: /assets/img/avatar/avatar.jpg
-ad: /assets/img/1.gif
+# header右侧图片展示
+ad: /assets/img/avatar/hello.jpg
+
+
 baidu_share: true
 
 # 请到baidu_tongji.ejs中替换代码
