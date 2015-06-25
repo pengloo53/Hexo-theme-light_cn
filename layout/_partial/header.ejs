@@ -17,19 +17,19 @@
 </div>
 
 <div class= "header-nav">
-	<nav id="main-nav" class="alignleft">
+	<div id="main-nav" class="alignleft">
 	  <ul>
 	    <% for (var i in theme.menu){ %>
 	      <li><a href="<%- theme.menu[i] %>"><%= i %></a></li>
 	    <% } %>
 	  </ul>
-	</nav>
-	<nav id="sub-nav" class="alignright">
+	</div>
+	<div id="sub-nav" class="alignright">
 	  <ul>
 	    <% for (var i in theme.submenu){ %>
 	      <li><a href="<%- theme.submenu[i] %>"><%= i %></a></li>
 	    <% } %>
 	  </ul>	
-	</nav>
+	</div>
 	<div class="clearfix"></div>
 </div>

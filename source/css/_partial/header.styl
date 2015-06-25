@@ -29,26 +29,25 @@
 
   .header-nav
     margin-bottom 20px
-    padding-left 15px
-    padding-right 15px
+    padding 0 15px
     border-top 2px solid #eee
     border-bottom 2px solid #eee
 
   #main-nav
     font-family font-title
-    line-height 2.5em
     font-size 1.1em
-    a:hover
-      background-color #EEE
     ul
       list-style none
       li
         float left
-        display block
+        padding 13px 15px
+        &:hover
+          background-color #EEE
+          color #999
+          font-style italic
     
   #sub-nav
     font-family font-title
-    line-height 2.5em
     font-size 1.1em
     @media screen and (max-width: 600px)
       display none
@@ -56,11 +55,10 @@
       list-style none
       li
         float right
-        display block
+        padding 13px 15px
 
   a
     color #999
-    padding 10px 15px
     &:hover
       color color-link
       text-decoration none
