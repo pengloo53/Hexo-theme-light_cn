@@ -4,16 +4,27 @@
 
 [Demo](http://www.linux2me.com)
 
-![](001.png)
+
 ![](002.png)
 
-##改造点
+从1.0版本以后，
+
+
+## Release 1.1
+改变了light主题的header样式以及整体着色。开始有别于原light主题的风格。
+
+![2015-06-20 01 36 21](https://cloud.githubusercontent.com/assets/5508125/8259131/d420ff76-16ec-11e5-9f09-d640a49ee2a3.png)
+
+## Release 1.0
+![](001.png)
+
+###改造点
 
 1. 去google服务、去facebook、去addthis等严重影响访问速度的服务，替换成百度分享、多说评论、百度统计等国内服务。
 2. 修改code、blockquote样式（不太适合中文）。
 3. 调整index布局文件。
 
-##添加的新功能
+###添加的新功能
 
 1. Header添加头像，并添加增大动画效果
 2. 添加新浪微博widgets
