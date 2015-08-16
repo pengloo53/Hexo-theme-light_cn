@@ -3,7 +3,12 @@
   <header id="header" class="inner"><%- partial('_partial/header') %></header>
   <% if(page.layout == 'resume') {%>
           <%- body %>
-  	<% }else{ %>
+  	<% }else if(page.layout == 'gallery'){ %>
+          <div id="content" class="inner">
+            <%- body %>
+          <div class="clearfix"></div>
+      </div>
+      <% } else {%>
       <div id="content" class="inner">
   		<div id="main-col" class="alignleft"><div id="wrapper"><%- body %></div></div>
   		<aside id="sidebar" class="alignright"><%- partial('_partial/sidebar') %></aside>

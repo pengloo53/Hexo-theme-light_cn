@@ -1,31 +1,31 @@
 <div class= "header-content">
 	<div class = "alignleft col-one">
-		<img src = "<%= theme.avatar %>">
+		<% if (theme.avatar) { %>
+			<img src = "<%= theme.avatar %>">
+		<% } %>
 		<div class="header-div">
 		    <h1><a href="<%- config.root %>"><%= config.title %></a></h1>
 		    <h2><a href="<%- config.root %>"><% if (config.subtitle){ %><%= config.subtitle %><% } %></a></h2>
 		</div>
 	</div>
 	<div class = "alignright col-two">
-		<img src = "<%= theme.ad %>">
+		<% if (theme.ad){ %>
+			<img src = "<%= theme.ad %>">
+		<% } %>
 	</div>
 	<div class="clearfix"></div>
 </div>
 
 <div class= "header-nav">
-	<nav id="main-nav" class="alignleft">
-	  <ul>
+	<div id="main-nav" class="alignleft">
 	    <% for (var i in theme.menu){ %>
-	      <li><a href="<%- theme.menu[i] %>"><%= i %></a></li>
+	      <a href="<%- theme.menu[i] %>"><%= i %></a>
 	    <% } %>
-	  </ul>
-	</nav>
-	<nav id="sub-nav" class="alignright">
-	  <ul>
+	</div>
+	<div id="sub-nav" class="alignright">
 	    <% for (var i in theme.submenu){ %>
-	      <li><a href="<%- theme.submenu[i] %>"><%= i %></a></li>
+	      <a href="<%- theme.submenu[i] %>"><%= i %></a>
 	    <% } %>
-	  </ul>	
-	</nav>
+	</div>
 	<div class="clearfix"></div>
 </div>

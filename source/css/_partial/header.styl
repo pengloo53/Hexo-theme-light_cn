@@ -3,8 +3,8 @@
   margin-bottom 25px
 
   .header-content
+    padding 25px 0px 25px 0
     .col-one
-      padding 25px 0px 25px 0
       width 100%
       img
         border-radius 50%
@@ -13,7 +13,7 @@
         margin 0 0.8em
         transition height 0.3s, transform 1s
         &:hover
-          height 6em
+          height 8em
           transform rotate(360deg)
           -ms-transform rotate(360deg)  /* IE 9 */
           -webkit-transform rotate(360deg) /* Safari and Chrome */
@@ -22,7 +22,6 @@
 
     .col-two
       margin-left -50%
-      padding 25px 0px 25px 0
       img
         height 5em
         @media screen and (max-width: 600px)
@@ -30,24 +29,31 @@
 
   .header-nav
     margin-bottom 20px
-    padding-left 15px
-    padding-right 15px
-    border-top 2px solid #eee
+    padding 0 15px
     border-bottom 2px solid #eee
+
+  .header-nav a
+    display block
+    padding 10px 10px 10px 10px
+    float left
+    &:hover
+      font-size 1.2em
 
   #main-nav
     font-family font-title
-    line-height 2.5em
     font-size 1.1em
     ul
       list-style none
       li
         float left
-        display block
+        padding 13px 15px
+        &:hover
+          background-color #EEE
+          color #999
+          font-style italic
     
   #sub-nav
     font-family font-title
-    line-height 2.5em
     font-size 1.1em
     @media screen and (max-width: 600px)
       display none
@@ -55,11 +61,10 @@
       list-style none
       li
         float right
-        display block
+        padding 13px 15px
 
   a
     color #999
-    padding 10px 15px
     &:hover
       color color-link
       text-decoration none
