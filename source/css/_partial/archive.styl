@@ -24,3 +24,40 @@
     box-shadow none
     .post-content
       margin-bottom 0
+
+
+.archive-tags
+    color color-meta
+    font-size 0.9em
+    line-height 16px
+    position relative
+    min-height 16px
+    a
+      color color-meta
+      &:hover
+        color color-link
+        text-decoration none
+      &:before
+        font 1.1em font-icon
+        padding-right 10px
+        vertical-align middle
+
+    .categories, .tags
+      position relative
+      padding-left 25px
+      margin 5px 0
+      &:before
+        position absolute
+        font 1.1em font-icon
+
+    .categories
+      &:before
+        content '\f07b'
+        top 2px
+        left 1px
+
+    .tags
+      &:before
+        content '\f02b'
+        top 3px
+        left 2px
