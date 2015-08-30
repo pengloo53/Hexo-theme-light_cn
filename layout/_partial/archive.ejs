@@ -31,6 +31,7 @@ if (page.archive){
             <% } else { %>
               <h1 class="title"><a href="<%- config.root %><%- item.path %>"><%= item.title %></a></h1>
             <% } %>
+            <%- partial('post/tag', {item: item}) %>
           </header>
         </div>
       </article>

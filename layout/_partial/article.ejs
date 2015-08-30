@@ -18,7 +18,7 @@
       <% } %>
     </div>
     <footer>
-      <% if (index){ %>
+<!--       <% if (index){ %> -->
         <% if (item.excerpt){ %>
           <div class="alignleft">
             <a href="<%- config.root %><%- item.path %>#more" class="more-link"><%= theme.excerpt_link %></a>
@@ -29,11 +29,11 @@
           <a href="<%- config.root %><%- item.path %>#comment" class="comment-link"><%= theme.comment_link %></a>
         </div>
         <% } %>
-      <% } else { %>
+<!--       <% } else { %> -->
         <%- partial('post/category') %>
         <%- partial('post/tag') %>
         <%- partial('post/share') %>
-      <% } %>
+<!--       <% } %> -->
       <div class="clearfix"></div>
     </footer>
   </div>
