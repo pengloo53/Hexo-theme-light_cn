@@ -5,7 +5,7 @@ menu:
   归档: /archives
 
 submenu:
-  RSS: /atom.xml
+  订阅RSS: /atom.xml
   自定义: /customization
   个人简历: /resume  
 
