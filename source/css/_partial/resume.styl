@@ -2,7 +2,7 @@
 	margin: 0 auto;
 	background-color: #FFF;
 	line-height: 1.6;
-	width: 800px;
+	width: 921px;
 	@media screen and (max-width: 860px){
 		width: 100%;
 	}
@@ -10,7 +10,9 @@
 
 .resume-content{
 	float: right;
-	width: 580px;
+	width: 550px;
+	padding: 30px;
+	border-left: 1px dashed #aaa;
 	@media screen and (max-width: 860px) {
 		width: 100%;
 		margin-left: -210px;
@@ -18,6 +20,7 @@
 	@media screen and (max-width: 500px){
 		margin-left: 0;
 		float: none;
+		border:none;
 	}
 }
 
@@ -33,7 +36,6 @@
 }
 
 .resume-entry{
-	margin: 30px;
 	@media screen and (max-width: 860px) {
 		margin-left: 200px;
 	}	
@@ -50,8 +52,8 @@
 
 .resume-left{
 	float: left;
-	width: 150px;
-	margin: 30px;
+	width: 250px;
+	padding: 30px;
 	@media screen and (max-width: 500px){
 		float: none;
 		margin: 0 auto;
@@ -60,7 +62,7 @@
 
 .resume-left img{
 	max-width: 100%;
-	margin:20px 0;
+	float: right;
 }
 
 .resume-left .strong{
@@ -75,4 +77,76 @@
 
 .resume-left span{
 	font-style: italic;
+}
+
+
+
+//  new resume css
+.resume-txt{
+	float: right;
+	padding-top: 12px;
+	text-align: right;
+	line-height: 1.2em;
+}
+
+.resume-little{
+	font-size: 0.8em;
+	color: #aaa;
+}
+
+.resume-detail{
+	font-size:1.1em;
+	color: #000;
+}
+
+.resume-title2{
+	float: right;
+	padding-bottom: 15px;
+	padding-top:15px;
+	text-align: right;
+	font-size:1.3em;
+	color: #258FB8;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration:underline;
+}
+
+.resume h3{
+	padding-bottom: 15px;
+	padding-top:15px;
+	font-size:1.3em;
+	color: #258FB8;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration:underline;
+	border: none;
+	margin: 0;	
+}
+
+.resume blockquote{
+      font-style: italic;
+      font-family: "Comic Sans MS";
+      padding: 10px 15px;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+}
+
+.resume blockquote p{
+	margin: 0;
+	font-size: 1.3em;
+}
+
+.resume blockquote footer{
+	border-top: none;
+	font-size: 0.8em;
+	line-height: 1;
+	margin: 10px 0 0;
+	padding-top: 0;
+	text-align: right;
+}
+
+.resume blockquote footer cite:before{
+	content: '—';
+	color: #ccc;
+	padding 0 0.5em;
 }
