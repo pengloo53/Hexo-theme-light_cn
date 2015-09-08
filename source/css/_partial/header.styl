@@ -12,8 +12,12 @@
         float left
         margin 0 0.8em
         transition height 0.3s, transform 1s
+        @media screen and (max-width: 600px)
+          height 7em
+        @media screen and (max-width: 320px)
+          text-align center
         &:hover
-          height 8em
+          height 7em
           transform rotate(360deg)
           -ms-transform rotate(360deg)  /* IE 9 */
           -webkit-transform rotate(360deg) /* Safari and Chrome */

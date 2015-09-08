@@ -5,7 +5,7 @@ menu:
   归档: /archives
 
 submenu:
-  订阅RSS: /atom.xml
+  订阅: /atom.xml
   自定义: /customization
   个人简历: /resume  
 
@@ -46,7 +46,7 @@ duoshuo:
 
 wumii: 
   relateditems: false
-  siteprefix: http://www.linux2me.com
+  siteprefix: http://lupeng.me
 
 
 #fancybox: false
