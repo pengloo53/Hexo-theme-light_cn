@@ -1,7 +1,7 @@
 menu:
   首页: /
   文集: /collection
-  图集: /gallery
+#  图集: /gallery
   归档: /archives
 
 submenu:
@@ -11,7 +11,7 @@ submenu:
 
 
 widgets:
-# - search
+- search
 - category
 - archive
 # - tag
