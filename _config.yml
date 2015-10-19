@@ -3,11 +3,12 @@ menu:
 #  文集: /collection
 #  图集: /gallery
   归档: /archives
+  关于我: /resume    
 
 submenu:
   订阅: /atom.xml
   留言: /customization
-  简历: /resume  
+
 
 
 widgets:
