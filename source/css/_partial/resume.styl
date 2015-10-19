@@ -3,7 +3,7 @@
 	background-color: #FFF;
 	line-height: 1.6;
 	width: 921px;
-	@media screen and (max-width: 860px){
+	@media screen and (max-width: 900px){
 		width: 100%;
 	}
 }
@@ -13,14 +13,17 @@
 	width: 550px;
 	padding: 30px;
 	border-left: 1px dashed #aaa;
-	@media screen and (max-width: 860px) {
+	margin-left: -210px;
+	@media screen and (max-width: 900px) {
 		width: 100%;
-		margin-left: -210px;
+		margin: 0 auto;
+		float : none;
 	}
 	@media screen and (max-width: 500px){
-		margin-left: 0;
+		margin: 0 auto;
 		float: none;
 		border:none;
+		width: 300px;
 	}
 }
 
@@ -36,12 +39,13 @@
 }
 
 .resume-entry{
-	@media screen and (max-width: 860px) {
-		margin-left: 200px;
+	@media screen and (max-width: 900px) {
+		margin: 0 auto;
+		width: 100%;
 	}	
 	@media screen and (max-width: 500px){
-		padding-left: 30px;
-		margin-left: 0px;
+		margin: 0 auto;
+		text-align: center;
 	}
 
 }
@@ -54,22 +58,41 @@
 	float: left;
 	width: 250px;
 	padding: 30px;
+	text-align: right;
+	@media screen and (max-width: 900px){
+		float: none;
+		margin: 0 auto;
+		text-align: left;
+		width: 100%;
+	}	
 	@media screen and (max-width: 500px){
 		float: none;
 		margin: 0 auto;
+		text-align: center;
+		width:300px;
 	}	
 }
 
 .resume-left img{
 	max-width: 100%;
 	float: right;
+	@media screen and (max-width: 900px){
+		float: none;
+		margin: 0 auto;
+		text-align: left;
+	}	
+	@media screen and (max-width: 500px){
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+	}	
 }
 
-.resume-left .strong{
+/*.resume-left .strong{
 	font-weight: bold;
 	margin-bottom: 10px;
 	text-align: center;
-}
+}*/
 
 .resume-left ul li{
 	list-style: none;
@@ -85,30 +108,47 @@
 .resume-txt{
 	float: right;
 	padding-top: 12px;
-	text-align: right;
 	line-height: 1.2em;
+	@media screen and (max-width: 900px){
+		float: none;
+		margin: 0 auto;
+		text-align: left;
+	}	
+	@media screen and (max-width: 500px){
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+	}	
 }
 
 .resume-little{
 	font-size: 0.8em;
 	color: #aaa;
 }
-
 .resume-detail{
 	font-size:1.1em;
 	color: #000;
+	width: 100%;
 }
 
 .resume-title2{
 	float: right;
-	padding-bottom: 15px;
 	padding-top:15px;
-	text-align: right;
 	font-size:1.3em;
 	color: #258FB8;
 	font-weight: bold;
 	font-style: italic;
 	text-decoration:underline;
+	@media screen and (max-width: 900px){
+		float: none;
+		margin: 0 auto;
+		text-align: left;
+	}	
+	@media screen and (max-width: 500px){
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+	}	
 }
 
 .resume h3{
@@ -142,7 +182,6 @@
 	line-height: 1;
 	margin: 10px 0 0;
 	padding-top: 0;
-	text-align: right;
 }
 
 .resume blockquote footer cite:before{
