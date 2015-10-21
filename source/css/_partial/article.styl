@@ -34,7 +34,7 @@ article
           vertical-align super
 
   .post-content
-    padding 1.5em 3em 1em (icon-size + icon-gap + 20)
+    padding 1.5em 3em 0 (icon-size + icon-gap + 20)
     margin-bottom 2em
     position relative
     @media screen and (max-width: 600px)
@@ -117,6 +117,8 @@ article
 
     .title
       font-weight normal
+      @media screen and (max-width:600px)
+         font-size 1.5em
       a
         color color-font
         &:hover
@@ -238,8 +240,8 @@ article
       font-size 1.5em
 
   footer
-    margin-top 15px
-    padding-top 10px
+    padding-bottom 1em
+    padding-top 1em
     border-top 1px solid color-border
     color color-meta
     font-size 0.9em
