@@ -24,7 +24,7 @@ comment_link: Comments
 # header头像
 avatar: /assets/img/avatar/avatar.jpg
 # header右侧图片展示
-# ad: /assets/img/avatar/hello.jpg
+ad: /assets/img/avatar/hello.jpg
 
 
 baidu_share: true
