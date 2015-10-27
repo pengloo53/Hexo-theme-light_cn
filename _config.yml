@@ -3,7 +3,8 @@ menu:
 #  文集: /collection
 #  图集: /gallery
   归档: /archives
-  关于我: /resume    
+  分类: /index.html#categories
+  关于我: /resume
 
 submenu:
   订阅: /atom.xml
