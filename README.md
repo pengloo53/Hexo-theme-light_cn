@@ -2,7 +2,7 @@
 
 > 该主题是基于hexo默认主题[hexo-theme-light](https://github.com/hexojs/hexo-theme-light)的一个china适用版。
 
-[Demo](http://www.linux2me.com)
+[Demo](http://lupeng.me)
 
 ## Release 1.1
 改变了light主题的header样式以及整体着色。开始有别于原light主题的风格。
@@ -10,7 +10,7 @@
 ![2015-06-20 01 36 21](https://cloud.githubusercontent.com/assets/5508125/8259131/d420ff76-16ec-11e5-9f09-d640a49ee2a3.png)
 
 ## Release 1.0
-![](001.png)
+![](source/img/README/001.png)
 
 ###1、改造点
 
