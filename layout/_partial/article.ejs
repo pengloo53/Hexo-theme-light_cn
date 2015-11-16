@@ -8,6 +8,7 @@
         <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a></time>
         <%- partial('post/title') %>
     </header>
+
     <div class="entry">
       <% if (item.excerpt && index){ %>
         <%- item.excerpt %>
@@ -32,6 +33,7 @@
 <!--       <% } else { %> -->
         <%- partial('post/category') %>
         <%- partial('post/tag') %>
+        <%- partial('post/counter') %>
         <%- partial('post/share') %>
 <!--       <% } %> -->
       <div class="clearfix"></div>
