@@ -7,6 +7,9 @@
         <div class="icon"></div>
         <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a></time>
         <%- partial('post/title') %>
+        <% if (item.top){ %>
+          <div id="top">置顶</div>
+        <% } %>
     </header>
 
     <div class="entry">

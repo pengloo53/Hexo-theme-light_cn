@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表单页面</title>
+	<meta charset="utf-8"/>
+	<style>
+		body{
+			background-color: grey;
+			text-align: center;
+		}
+		input{
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>填写相关信息</h1>
+	<form action="/post" method="post">
+		名字：<input type="text" name="name"/><br/>
+		邮箱：<input type="text" name="email"/><br/>
+		地址：<input type="text" name="address"/><hr/>
+		<input type="submit" value="提交"/>
+		<input type="reset" value="重置"/>
+	</form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Study_JavaScript_001</title>
+    <script>
+        
+        function addSomeText(){
+            var p = document.getElementById("test-p");
+            // innerHTML非常重要的属性，往DOM节点里添加任何内容（注意不是绝对）
+            p.innerHTML = "Hello,JavaScript!"  
+        }
+        function changeStyle(){
+            var p = document.getElementById("test-p");
+            // 改变style样式，注意驼峰写法
+            p.style.fontSize = "2em";  
+            p.style.color = "red";
+            p.style.fontWeight = "bold";
+            p.style.padding = "1em";
+            p.style.backgroundColor = "yellow";
+            p.style.fontFamily = "fantasy";
+            p.style.fontStyle = "italic";
+        }
+    </script>
+</head>
+<body>
+    <a href="http://lupeng.me" style="font-style: italic">HOME</a>
+    <div id="content">
+        <p id='test-p'></p>
+    </div>
+    <button onclick="addSomeText()">addSomeText</button>
+    <button onclick="changeStyle()">changeStyle</button>
+</body>
+</html>
