@@ -4,6 +4,15 @@
 
 [Demo](http://lupeng.me)
 
+##Release 1.2
+主要做了下列修改：
+1. 整体风格更加简洁，修改多处页面细节，符合响应式设计；
+2. 修改文章显示宽度，main-col宽度改成760px（文章一行不宜过长）；
+3. 添加了[不蒜子计数器](http://service.ibruce.info/)；
+4. 设计个人简历页面，[Demo](http://lupeng.me/resume/)；
+
+![]()
+
 ## Release 1.1
 改变了light主题的header样式以及整体着色。开始有别于原light主题的风格。
 
