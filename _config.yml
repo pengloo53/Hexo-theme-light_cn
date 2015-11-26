@@ -37,17 +37,17 @@ baidu_tongji: true
 weibo:
   enable: true
   height: 800
-  url: http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=800&fansRow=1&ptype=1&speed=0&skin=1&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=1934606495&verifier=a6769878&dpc=1
+  url: Your weibo url
 
 # 评论提供可以选择 duoshuo 或者 wumii，无需评论，此处不填就行。
 comment_provider: duoshuo
 
 duoshuo:
-  short_name: pengloo53
+  short_name: Your duoshuo
 
 wumii: 
   relateditems: true
-  siteprefix: http://lupeng.me
+  siteprefix: Your site url
 
 
 #fancybox: false
