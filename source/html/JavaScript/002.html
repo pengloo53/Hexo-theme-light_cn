@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day2 JavaScript</title>
+	<script>
+function add1(){
+	//将已有的节点插入到list列表中
+	var list = document.getElementById("list");
+	var javascript = document.getElementById("javascript");
+	javascript.style.color = "red";
+	list.appendChild(javascript);
+}
+function add2(){
+	//创建一个节点，并插入到list列表中
+	var java = document.createElement("p");
+	java.setAttribute("id","java");
+	java.innerHTML = "Java";
+	list.appendChild(java);
+}
+function add3(){
+	//创建一个节点，并插入到list列表中
+	var php = document.createElement("p");
+	php.setAttribute("id","php");
+	php.innerHTML = "PHP";
+	list.insertBefore(php,java); //将php节点插入到java节点前面
+}
+function removeSomething(){
+	var java = document.getElementById("java");
+	var list = document.getElementById("list");
+	list.removeChild(java);  //移除指定节点
+}
+	</script>
+</head>
+<body>
+  <a href="http://lupeng.me" style="font-style: italic; margin-right: 1em">Home</a>
+  <a href="http://lupeng.me/categories/JavaScript/" style="font-style: italic; margin-right: 1em">JavaScript</a>
+	<p id="javascript">JavaScript</p>
+	<div id="list">
+		<p id="html">HTML</p>
+		<p id="css">CSS</p>
+	</div>
+	<button onclick="add1()">Add1</button>
+	<button onclick="add2()">Add2</button>
+	<button onclick="add3()">Add3</button>
+	<button onclick="removeSomething()">Remove</button>
+</body>
+</html>

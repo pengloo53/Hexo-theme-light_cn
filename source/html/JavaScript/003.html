@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day3 JavaScript</title>
+	<script>
+		// 直接将DOM节点保存在Array列表中进行排序
+	 	function sortDOM1 () {
+	 		var list = document.getElementById('test-list');
+	 		var arr = [].slice.call(document.getElementsByClassName("lang"));
+	 		arr.sort(function(x1,x2){
+	 			if (x1.innerHTML < x2.innerHTML){
+	 				return -1;
+	 			}else if (x1.innerHTML > x2.innerHTML){
+	 				return 1;
+	 			}else{
+	 				return 0;
+	 			}
+	 		});
+	 		for(var i = 0 ; i < arr.length ; i++){
+	 			list.appendChild(arr[i]);
+	 		}
+	 	}
+	 	// 先清空，再创建
+	 	function sortDOM2(){
+	 		var list = document.getElementById("test-list");
+	 		var lang = document.getElementsByClassName("lang");
+	 		var arrList = [];
+	 		for (var i = 0 ; i < lang.length ; i ++){
+	 			arrList[i] = lang[i].innerHTML;
+	 		}
+	 		arrList.sort();
+	 		list.innerHTML = ""; // 清空一个DOM节点的方法，简单粗暴
+	 		for (var i = 0 ; i < arrList.length ; i ++){
+	 			var newElement = document.createElement("li");
+	 			newElement.setAttribute("class","lang");
+	 			newElement.innerHTML = arrList[i];
+	 			list.appendChild(newElement);
+	 		}
+	 	}
+	 	// 直接更改children
+	 	function sortDOM3(){
+	 		var list = document.getElementById("test-list");
+	 		var lang = document.getElementsByClassName("lang");
+	 		var arrList2 = [];
+	 		for (var i = 0 ; i < lang.length ; i ++){
+	 			arrList2[i] = lang[i].innerHTML;
+	 		}
+	 		arrList2.sort();
+	 		for(var i = 0 ; i < arrList2.length ; i ++){
+	 			list.children[i].innerHTML = arrList2[i];
+	 		}
+	 	}
+	 	// 排序算法
+	 	function sortDOM4 () {
+	 		var list = document.getElementById("test-list");
+	 		var lang = document.getElementsByClassName("lang");
+	 		for (var i = 0 ; i < lang.length-1 ; i++){
+	 			for(var j = i+1 ; j < lang.length ; j ++){  // 	取出最大的那个，插入第一个节点中
+	 				if (lang[i].innerHTML < lang[j].innerHTML){
+	 					var a ;
+	 					a = lang[i].innerHTML;
+	 					lang[i].innerHTML = lang[j].innerHTML;
+	 					lang[j].innerHTML = a; 
+	 					
+	 				}
+	 			}
+	 			list.children[i].innerHTML = lang[i].innerHTML;
+	 		}
+	 	}
+	 	// 冒泡排序算法
+	 	function sortDOM5 (){
+	 		var list = document.getElementById("test-list");
+	 		var lang = document.getElementsByClassName("lang");
+	 		for (var i = 0 ; i < lang.length ; i ++){
+	 			for(var j = 0 ; j < lang.length - i -1 ; j ++){  // 每次遍历次数递减
+	 				if(lang[j].innerHTML > lang[j+1].innerHTML){
+	 					list.insertBefore(lang[j+1],lang[j]);
+	 				}
+	 			}
+	 		}
+	 	}
+	</script>
+</head>
+<body>
+  <a href="http://lupeng.me" style="font-style: italic; margin-right: 1em">Home</a>
+  <a href="http://lupeng.me/categories/JavaScript/" style="font-style: italic; margin-right: 1em">JavaScript</a>
+	<ol id="test-list">
+	    <li class="lang">Scheme</li>
+	    <li class="lang">JavaScript</li>
+	    <li class="lang">Python</li>
+	    <li class="lang">Ruby</li>
+	    <li class="lang">Haskell</li>
+	    <li class="lang">Html</li>
+	    <li class="lang">Css</li>
+	</ol>
+	<button onclick="sortDOM1()">Sort1</button>
+	<button onclick="sortDOM2()">Sort2</button>
+	<button onclick="sortDOM3()">Sort3</button>
+	<button onclick="sortDOM4()">Sort4</button>
+	<button onclick="sortDOM5()">Sort5</button>
+</body>
+</html>
