@@ -1,47 +1,40 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<title>Day4 JavaScript</title>
-	<script>
-		var count = 1	;
-		function addOption () {
-			var form = document.getElementById('test-form');
-			var ol = document.getElementById('test-ol');
-			var li = document.createElement("li");
-			li.setAttribute("class","li-options");
-			li.id = "li" + count;
+	<head>
+		<title>Day4</title>
+		<script>
+			var count =1;
+			function addOption() {
+				var form = document.getElementById('test-form');
+				var ol = document.getElementById('test-ol');
+				var li = document.createElement("li");
+				var input = document.createElement("input");
+				var button = document.createElement("button");
 
-			var input = document.createElement("input");
-			input.setAttribute("class","options");
-			input.setAttribute("type","text");
-
-			var button = document.createElement("button");
-			button.innerHTML = "Remove";
-			button.setAttribute("class","removeButton");
-			button.id = count;
-			button.setAttribute("onclick","removeOption(this.id)");
-			
-			ol.appendChild(li);
-			li.appendChild(input);
-			li.appendChild(button);
-			count ++;
-		}
-		function removeOption(iCount){
-			var ol = document.getElementById("test-ol");
-			var removeId = "li" + iCount;
-			var needRemove = document.getElementById(removeId);
-			ol.removeChild(needRemove);
-		}
-	</script>
-</head>
-<body>
-  <a href="http://lupeng.me" style="font-style: italic; margin-right: 1em">Home</a>
-  <a href="http://lupeng.me/categories/JavaScript/" style="font-style: italic; margin-right: 1em">JavaScript</a>
-  <form id="test-form">
-  	<ol id = "test-ol">
-  		
-  	</ol>
-  	<button onclick="addOption()">Add</button>
-  </form>
-</body>
+				li.id = "li" + count;
+				input.setAttribute("type","text");
+				input.setAttribute("value","Hello"+count);
+				button.id = count;
+				button.setAttribute("onclick","removeOption(this.id)");
+				button.innerHTML = "remove";
+				li.appendChild(input);
+				li.appendChild(button);
+				ol.appendChild(li);
+				count ++;
+			}	
+			function removeOption(buttonId) {
+				var removeId = "li" + buttonId;
+				var ol = document.getElementById("test-ol");
+				var removeDom = document.getElementById(removeId);
+				ol.removeChild(removeDom);
+			}
+		</script>
+	</head>
+	<body>
+	  <a href="http://lupeng.me" style="font-style: italic; margin-right: 1em">Home</a>
+  	<a href="http://lupeng.me/categories/JavaScript/" style="font-style: italic; margin-right: 1em">JavaScript</a>
+		<form id="test-form" action="#">
+			<ol id="test-ol"></ol>
+			<button onclick="addOption()">Add</button>
+		</form>
+	</body>
 </html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day5 JavaScript</title>
+  <style>
+    div{
+      margin: 0.5em;
+    }
+    .text{
+      text-transform: uppercase;
+      font-size: 0.8em;
+      font-family: fantasy;
+      font-weight: bold;
+    }
+    input{
+      width: 12em;
+      position: fixed;
+      left: 10em;
+    }
+    #error{
+      font-size:0.7em;
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+  <script>
+    function checkForm() {
+      var form = document.getElementById('test-form');
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      var rePassword = document.getElementById('password2').value;
+      var error = document.getElementById('error');
+      // 不允许为空
+      if (username.length <= 0 || password.length <= 0 || password2 <= 0){
+        error.innerHTML = "not allow empty";
+        return false;
+      }
+      // 用户名为字符数字，3到10位
+      var reg_username = /^[0-9a-zA-Z]{3,10}$/;
+      if(!reg_username.test(username)){
+        error.innerHTML = "username is not valid, please retry";  
+        return false;
+      }
+      // 密码需为6到12位
+      var reg_password = /^.{6,12}$/;
+      if(!reg_password.test(password)){
+        error.innerHTML = "password is not valid, please retry";
+        return false;
+      }
+      // 两次输入密码需一致
+      if (password != rePassword) {
+        error.innerHTML = "inconsistent password";
+        return false;
+      }
+      error.innerHTML = "Success";
+      alert("Access Success");
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <a href="http://lupeng.me" style="font-style: italic; margin-right: 1em">Home</a>
+  <a href="http://lupeng.me/categories/JavaScript/" style="font-style: italic; margin-right: 1em">JavaScript</a>
+  <form action="#" id="test-form" onsubmit="return checkForm()">
+    <div><span class="text">username:</span><input type="text" name="username" id="username"></div>
+    <div><span class="text">password:</span><input type="text" name="password" id="password"></div>
+    <div><span class="text">re-password:</span><input type="text" name="password2" id="password2"></div>   
+    <div id="error" class="text"></div>
+    <button type="submit" name="submit">Submit</button>
+    <button type="reset" name="reset">Reset</button>
+  </form>
+</body>
+</html>
