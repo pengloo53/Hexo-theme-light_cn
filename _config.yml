@@ -14,10 +14,12 @@ submenu:
 widgets:
 #- search
 - category
+- baidu_tuijian
 - archive
 # - tag
 - tagcloud
 - weibo
+
 
 excerpt_link: Read More
 comment_link: Comments
@@ -33,6 +35,11 @@ baidu_share: true
 # 请到baidu_tongji.ejs中替换代码
 baidu_tongji: true
 
+# 百度推荐小挂件，enable是否开启，id百度推荐代码id
+baidu_tuijian: 
+  enable: true
+  id: hm_t_88638
+
 # enable是否开启；height小挂件高度；url替换成自己的微博挂件地址，同步修改url中height的值
 weibo:
   enable: true
@@ -46,6 +53,6 @@ duoshuo:
   short_name: pengloo53
 
 wumii: 
-  relateditems: true
+  relateditems: false
   siteprefix: http://lupeng.me
 
