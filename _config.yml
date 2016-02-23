@@ -16,6 +16,7 @@ widgets:
 - category
 - baidu_tuijian
 - archive
+- recent_comments
 # - tag
 - tagcloud
 - weibo
