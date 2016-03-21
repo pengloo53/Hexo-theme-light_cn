@@ -34,16 +34,16 @@ ad: /assets/img/avatar/hello.jpg
 baidu_share: true
 
 # 请到baidu_tongji.ejs中替换代码
-baidu_tongji: true
+baidu_tongji: false
 
 # 百度推荐小挂件，enable是否开启，id百度推荐代码id
 baidu_tuijian: 
-  enable: true
+  enable: false 
   id: hm_t_88638
 
 # enable是否开启；height小挂件高度；url替换成自己的微博挂件地址，同步修改url中height的值
 weibo:
-  enable: true
+  enable: false
   height: 800
   url: http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=800&fansRow=1&ptype=1&speed=0&skin=1&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=1934606495&verifier=a6769878&dpc=1
 
@@ -51,7 +51,7 @@ weibo:
 comment_provider: duoshuo
 
 duoshuo:
-  short_name: pengloo53
+  short_name: your duoshuo name
 
 wumii: 
   relateditems: false
