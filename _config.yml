@@ -44,14 +44,14 @@ comment_provider: duoshuo
 relate_provider: baidu_tuijian
 
 duoshuo:
-  short_name: your duoshuo name
+  short_name: Your duoshuo name
 
 wumii: 
   relateditems: false
   siteprefix: http://xxxxxx.com
 
 baidu_tuijian:
-  enable: false
+  enable: true
   id: hm_t_88638
 
 # Calendar
