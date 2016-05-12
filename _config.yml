@@ -1,9 +1,7 @@
 menu:
   首页: /
 #  文集: /collection
-#  图集: /gallery
   归档: /archives
-  分类: /index.html#categories
   关于我: /resume
 
 submenu:
@@ -12,15 +10,15 @@ submenu:
 
 
 widgets:
-#- search
+- search
 - category
-- baidu_tuijian
-- archive
+- calendar
 - recent_comments
-# - tag
+- links
 - tagcloud
-- weibo
-
+# - tag
+# - archive
+# - weibo
 
 excerpt_link: Read More
 comment_link: Comments
@@ -30,30 +28,34 @@ avatar: /assets/img/avatar/avatar.jpg
 # header右侧图片展示
 ad: /assets/img/avatar/hello.jpg
 
-
 baidu_share: true
 
 # 请到baidu_tongji.ejs中替换代码
-baidu_tongji: false
-
-# 百度推荐小挂件，enable是否开启，id百度推荐代码id
-baidu_tuijian: 
-  enable: false 
-  id: hm_t_88638
+baidu_tongji: true
 
 # enable是否开启；height小挂件高度；url替换成自己的微博挂件地址，同步修改url中height的值
 weibo:
   enable: false
-  height: 800
+  height: 400
   url: http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=800&fansRow=1&ptype=1&speed=0&skin=1&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=1934606495&verifier=a6769878&dpc=1
 
 # 评论提供可以选择 duoshuo 或者 wumii，无需评论，此处不填就行。
 comment_provider: duoshuo
+# 推荐提供可以选择 wumii 或者 baidu_tuijian , 无需评论，此处不填即可。
+relate_provider: baidu_tuijian
 
 duoshuo:
-  short_name: your duoshuo name
+  short_name: pengloo53
 
 wumii: 
-  relateditems: false
+  relateditems: true
   siteprefix: http://lupeng.me
+
+baidu_tuijian:
+  enable: true
+  id: hm_t_88638
+
+# Calendar
+calendar:
+  language: zh-CN
 

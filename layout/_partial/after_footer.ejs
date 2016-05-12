@@ -1,6 +1,22 @@
 <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
 <script src="<%- config.root %>js/jquery.imagesloaded.min.js"></script>
 <script src="<%- config.root %>js/gallery.js"></script>
+
+<!-- add calendar widget -->
+<% if (theme.widgets.indexOf('calendar') != -1){ %>
+  <script src="<%- config.root %>js/calendar.js"></script>
+  <script src="<%- config.root %>js/languages.js"></script>
+  <script type="text/javascript">
+    $(function() {
+    <% if (theme.calendar.options){ %>
+      $('#calendar').aCalendar('<%= theme.calendar.language || config.language %>', $.extend(<%- JSON.stringify(theme.calendar.options ) %>, {single:<%= config.calendar.single %>, root:'<%= config.calendar.root %>'});
+    <% }else{ %>
+      $('#calendar').aCalendar('<%= theme.calendar.language || config.language %>',{single:<%= config.calendar.single %>, root:'<%= config.calendar.root %>'});
+    <% } %>
+    });
+  </script>
+<% } %>
+
 <!-- 添加『不蒜子』计数服务 -->
 <script async src="http://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
