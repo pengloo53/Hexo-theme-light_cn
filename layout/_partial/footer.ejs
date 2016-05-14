@@ -1,18 +1,19 @@
-<div class="alignleft">
-<% if (config.author){ %>
-  &copy; <%= new Date().getFullYear() %> <%= config.author %>
-  <% } else { %>
-  &copy; <%= new Date().getFullYear() %> <%= config.title %>
-  <% } %>
+<div class="footer-content inner">
+  <div class="alignleft">
+  <% if (config.author){ %>
+    &copy; <%= new Date().getFullYear() %> <%= config.author %>
+    <% } else { %>
+    &copy; <%= new Date().getFullYear() %> <%= config.title %>
+    <% } %>
+  </div>
+  <div class="alignright">
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, Theme
+    <a href="https://github.com/pengloo53/Hexo-theme-light_cn">light_cn</a>
+  </div>
+  
+  <div class="visit">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  </div>
+  
+  <div class="clearfix"></div>
 </div>
-<div class="alignright">
-  Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, Theme
-  <a href="https://github.com/pengloo53/Hexo-theme-light_cn">light_cn</a>
-</div>
-
-<div class="visit">
-	本站总访问量<span id="busuanzi_value_site_pv"></span>次
-  </span>
-</div>
-
-<div class="clearfix"></div>
