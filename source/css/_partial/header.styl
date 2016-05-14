@@ -16,7 +16,9 @@
       font-size 1.3em
 
   .header-content
-    padding 2em 0.5em
+    padding 2em 0
+    @media screen and (max-width: 640px)
+      display none
     .col-one
       width 100%
       img
@@ -39,53 +41,51 @@
       margin-left -50%
       img
         height 5em
-        @media screen and (max-width: 600px)
+        @media screen and (max-width: 640px)
           display none
 
   .header-nav
-    padding 0 0.5em
-    border-bottom 2px solid #eee
-
-  .header-nav a
-    display block
-    padding 10px 10px 10px 10px
-    float left
-    &:hover
-      font-size 1.5em
-      position relative
-      bottom 10px
-      padding-bottom 0
-    &:active
-      font-size 1.5em
+    border-top 1px solid #eee
+    border-bottom 1px solid #eee
+    @media screen and (max-width: 640px)
+      background-color #333
+      border none
+  
+  .header-nav-content
+    ul
+      list-style none
+      display block
+      li
+        display inline-block
+        line-height 3em
+        &:hover
+          background-color #eee
+        @media screen and (max-width: 640px)
+          &:hover
+            background-color #333
+          a
+            color #fff
+            font-size 0.8em
 
   #main-nav
     font-family font-title
     font-size 1.1em
-    ul
-      list-style none
-      li
-        float left
-        padding 13px 15px
-        &:hover
-          background-color #EEE
-          color #999
-          font-style italic
+    @media screen and (max-width: 640px)
+      float none
+      text-align center
     
   #sub-nav
     font-family font-title
     font-size 1.1em
-    @media screen and (max-width: 600px)
+    @media screen and (max-width: 640px)
       display none
-    ul
-      list-style none
-      li
-        float right
-        padding 13px 15px
 
   a
     color #999
+    margin 0 0.5em
     &:hover
       color color-link
+      font-style italic
       text-decoration none
 
   h1

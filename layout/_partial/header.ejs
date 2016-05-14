@@ -1,4 +1,4 @@
-<div class= "header-content">
+<div class= "header-content inner">
 	<div class = "alignleft col-one">
 		<% if (theme.avatar) { %>
 			<!-- <img src = "<%= theme.avatar %>"> -->
@@ -18,15 +18,21 @@
 </div>
 
 <div class= "header-nav">
-	<div id="main-nav" class="alignleft">
-	    <% for (var i in theme.menu){ %>
-	      <a href="<%- theme.menu[i] %>"><%= i %></a>
-	    <% } %>
-	</div>
-	<div id="sub-nav" class="alignright">
-	    <% for (var i in theme.submenu){ %>
-	      <a href="<%- theme.submenu[i] %>"><%= i %></a>
-	    <% } %>
+	<div class='header-nav-content inner'>
+		<div id="main-nav" class="alignleft">
+			<ul>
+		    		<% for (var i in theme.menu){ %>
+		    		  <li><a href="<%- theme.menu[i] %>"><%= i %></a></li>
+		    		<% } %>
+		    	</ul>
+		</div>
+		<div id="sub-nav" class="alignright">
+     	 <ul>
+		    <% for (var i in theme.submenu){ %>
+		      <li><a href="<%- theme.submenu[i] %>"><%= i %></a></li>
+		    <% } %>
+     	 </ul>
+		</div>
 	</div>
 	<div class="clearfix"></div>
 </div>
