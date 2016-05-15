@@ -4,7 +4,21 @@
 
 [Demo](http://lupeng.me)
 
-##Release 1.2
+## Release 1.3
+添加一些功能模块：
+
+1. 集成推荐模块，百度推荐以及wumii推荐供选择
+2. 添加多说近期评论
+3. 添加日历云插件
+
+![](source/img/README/003-2.png)
+
+修改手机界面Header样式：
+
+![](source/img/README/003-1.png)
+            
+
+## Release 1.2
 主要做了下列修改：
 
 1. 整体风格更加简洁，修改多处页面细节，符合响应式设计；
