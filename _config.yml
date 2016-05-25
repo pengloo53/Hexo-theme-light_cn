@@ -57,4 +57,4 @@ baidu_tuijian:
 # Calendar
 calendar:
   language: zh-CN
-
+  root: calendar

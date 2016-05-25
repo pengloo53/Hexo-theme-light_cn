@@ -9,9 +9,9 @@
   <script type="text/javascript">
     $(function() {
     <% if (theme.calendar.options){ %>
-      $('#calendar').aCalendar('<%= theme.calendar.language || config.language %>', $.extend(<%- JSON.stringify(theme.calendar.options ) %>, {single:<%= config.calendar.single %>, root:'<%= config.calendar.root %>'});
+      $('#calendar').aCalendar('<%= theme.calendar.language %>', $.extend(<%- JSON.stringify(theme.calendar.options ) %>, {single:<%= theme.calendar.single %>, root:'<%= theme.calendar.root %>'});
     <% }else{ %>
-      $('#calendar').aCalendar('<%= theme.calendar.language || config.language %>',{single:<%= config.calendar.single %>, root:'<%= config.calendar.root %>'});
+      $('#calendar').aCalendar('<%= theme.calendar.language %>',{single:<%= theme.calendar.single %>, root:'<%= theme.calendar.root %>'});
     <% } %>
     });
   </script>
