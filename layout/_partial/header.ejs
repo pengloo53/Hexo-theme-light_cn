@@ -1,8 +1,9 @@
 <div class= "header-content inner">
 	<div class = "alignleft col-one">
 		<% if (theme.avatar) { %>
-			<!-- <img src = "<%= theme.avatar %>"> -->
-			<div class='avatar'></div>
+			<div class='avatar'>
+				<img src = "<%= theme.avatar %>">
+              </div>
 		<% } %>
 		<div class="header-div">
 		    <h1><a href="<%- config.root %>"><%= config.title %></a></h1>
@@ -11,7 +12,9 @@
 	</div>
 	<div class = "alignright col-two">
 		<% if (theme.ad){ %>
-			<!-- <img src = "<%= theme.ad %>"> -->
+            <div class="ad">
+			<img src = "<%= theme.ad %>">
+            </div>
 		<% } %>
 	</div>
 	<div class="clearfix"></div>
