@@ -73,35 +73,38 @@ git pull
 
 默认:
 
-``` yaml
+```yml
 menu:
   首页: /
 #  文集: /collection
-#  图集: /gallery
   归档: /archives
-  分类: /index.html#categories
   关于我: /resume
 
 submenu:
   订阅: /atom.xml
   留言: /customization
 
+
 widgets:
-#- search
+- search
 - category
-- archive
-# - tag
+- calendar
+- recent_comments
+- links
 - tagcloud
+# - tag
+# - archive
 - weibo
 
 excerpt_link: Read More
 comment_link: Comments
 
 # header头像
-avatar: /assets/img/avatar/avatar.jpg
+avatar: /img/default/avatar.png
 # header右侧图片展示
-ad: /assets/img/avatar/hello.jpg
+ad: 
 
+# 百度分享
 baidu_share: true
 
 # 请到baidu_tongji.ejs中替换代码
@@ -109,20 +112,27 @@ baidu_tongji: true
 
 # enable是否开启；height小挂件高度；url替换成自己的微博挂件地址，同步修改url中height的值
 weibo:
-  enable: true
-  height: 800
-  url: Your weibo url
+  height: 400
+  url: 
 
 # 评论提供可以选择 duoshuo 或者 wumii，无需评论，此处不填就行。
 comment_provider: duoshuo
+# 关联推荐提供可以选择baidu_tuijian 或者 wumii, 无需关联推荐，此处不填即可。
+relate_provider: baidu_tuijian
 
-duoshuo:
-  short_name: Your duoshuo
+# 多说，填写多说short_name
+duoshuo_short_name: 
 
-wumii: 
-  relateditems: true
-  siteprefix: Your site url
+# wumii，填写网站域名，例如：http://lupeng.me
+wumii_siteprefix: 
 
+# 百度推荐，填写百度推荐ID，例如：hm_t_88638
+baidu_tuijian_id: 
+
+# Calendar
+calendar:
+  language: zh-CN
+  root: calendar
 ```
 
 - `avatar` 头像URL
