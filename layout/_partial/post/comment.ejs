@@ -3,7 +3,7 @@
     <!--   <h1 class="title"><%= __('comment') %></h1> -->
     <%
         var duoshuo_short_name; 
-        if (site.data.config.duoshuo_short_name) { 
+        if (typeof(site.data.config) != 'undefined' && site.data.config.duoshuo_short_name) { 
             duoshuo_short_name = site.data.config.duoshuo_short_name;
         }else{
             duoshuo_short_name = theme.duoshuo_short_name;
@@ -11,7 +11,7 @@
     %>
     <% if(theme.comment_provider == 'duoshuo'){ %>
         <!-- 多说评论框 start -->
-        <div class="ds-thread" data-thread-key="<%= page.path %>" data-title="<%= page.title %>" data-url="<%=      page.permalink %>"></div>
+        <div class="ds-thread" data-thread-key="<%= page.path %>" data-title="<%= page.title %>" data-url="<%= page.permalink %>"></div>
         <!-- 多说评论框 end -->
         <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
         <script type="text/javascript">

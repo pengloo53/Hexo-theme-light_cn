@@ -1,9 +1,9 @@
 <%
     var weibo_height, weibo_url;
-    if(site.data.config.weibo){
+    if(typeof(site.data.config) != 'undefined' && site.data.config.weibo){
         weibo_height = site.data.config.weibo.height;
         weibo_url = site.data.config.weibo.url;
-    }else{
+    }else if(theme.weibo_height && theme.weibo_url){
         weibo_height = theme.weibo_height;
         weibo_url = theme.weibo_url;
     }

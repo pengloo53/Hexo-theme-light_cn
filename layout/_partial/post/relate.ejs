@@ -1,7 +1,7 @@
 <section id = "relate">
     <%
         var baidu_tuijian_id;
-        if(site.data.config.baidu_tuijian_id){
+        if(typeof(site.data.config) != 'undefined' && site.data.config.baidu_tuijian_id){
             baidu_tuijian_id = site.data.config.baidu_tuijian_id;
         }else{
             baidu_tuijian_id = theme.baidu_tuijian_id;

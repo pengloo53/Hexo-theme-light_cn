@@ -13,7 +13,7 @@ widgets:
 - search
 - category
 - calendar
-- recent_comments
+# - recent_comments
 - links
 - tagcloud
 # - tag
@@ -45,7 +45,7 @@ comment_provider: duoshuo
 relate_provider: baidu_tuijian
 
 # 多说，填写多说short_name
-duoshuo_short_name: 
+duoshuo_short_name: lupeng-test
 
 # wumii，填写网站域名，例如：http://lupeng.me
 wumii_siteprefix: 
