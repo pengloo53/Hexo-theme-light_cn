@@ -34,7 +34,7 @@ baidu_share: true
 # 请到baidu_tongji.ejs中替换代码
 baidu_tongji: true
 
-# enable是否开启；height小挂件高度；url替换成自己的微博挂件地址，同步修改url中height的值
+# height小挂件高度；url替换成自己的微博挂件地址，同步修改url中height的值
 weibo:
   height: 400
   url: 
@@ -48,12 +48,15 @@ relate_provider: baidu_tuijian
 duoshuo_short_name: lupeng-test
 
 # wumii，填写网站域名，例如：http://lupeng.me
-wumii_siteprefix: 
+wumii_siteprefix: http://lupeng.me
 
-# 百度推荐，填写百度推荐ID，例如：hm_t_88638
+# 百度推荐，填写百度推荐ID，例如我的是：hm_t_88638
 baidu_tuijian_id: 
 
 # Calendar
 calendar:
   language: zh-CN
   root: calendar
+
+# farbox
+fancybox: true

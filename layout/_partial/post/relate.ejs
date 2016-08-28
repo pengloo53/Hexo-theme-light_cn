@@ -3,28 +3,34 @@
         var baidu_tuijian_id;
         if(typeof(site.data.config) != 'undefined' && site.data.config.baidu_tuijian_id){
             baidu_tuijian_id = site.data.config.baidu_tuijian_id;
+            relate_provider = site.data.config.relate_provider;
         }else{
             baidu_tuijian_id = theme.baidu_tuijian_id;
+            relate_provider = theme.relate_provider;
         }
     %>
-	<% if (theme.relate_provider == 'baidu_tuijian'){ %>
-              <div id="<%= baidu_tuijian_id %>"></div>
-	<% } else if(theme.relate_provider == 'wumii'){%>
-                <section id="relate">
-                    <script type="text/javascript" id="wumiiRelatedItems"></script>
-                    <script type="text/javascript">
-                        var wumiiPermaLink = "<%= page.permalink %>"; //请用代码生成文章永久的链接
-                        var wumiiTitle = "<%= page.title %>"; //请用代码生成文章标题
-                        var wumiiTags = "<%= page.tags %>"; //请用代码生成文章标签，以英文逗号分隔，如："标签1,标签2"
-                        var wumiiCategories = "<%= page.categories %>"; //请用代码生成文章分类，分类名放在JSONArray中，如: ["分类1", "分类2"]
-                        var wumiiSitePrefix = "<%= theme.wumii_siteprefix%>";
-                        var wumiiParams = "&num=6&mode=3&pf=JAVASCRIPT";
-                    </script>
-                    <script type="text/javascript" src="http://widget.wumii.cn/ext/relatedItemsWidget"></script>
-                    <a href="http://www.wumii.com/widget/relatedItems" style="border:0;">
-                        <img src="http://static.wumii.cn/images/pixel.png" alt="无觅关联推荐，快速提升流量" style="border:0;padding:0;margin:0;" />
-                    </a>
-                </section>
-	<% } %>	
+    <% 
+        var tags = [];
+        var categories = [];
+        item.tags.forEach(function(tag){
+            tags.push(tag.name);
+        });
+        item.categories.forEach(function(category){
+            categories.push(category.name);
+        });
+     %>
+	<% if (relate_provider == 'baidu_tuijian'){ %>
+                <div id="<%= baidu_tuijian_id %>"></div>
+	<% } else if(relate_provider == 'wumii'){%>
+                <script type="text/javascript" id="wumiiRelatedItems"></script>
+                <script type="text/javascript">
+                    var wumiiPermaLink = "<%= item.permalink %>"; //请用代码生成文章永久的链接
+                    var wumiiTitle = "<%= item.title %>"; //请用代码生成文章标题
+                    var wumiiTags = "<%- tags.join(',') %>"; //请用代码生成文章标签，以英文逗号分隔，如："标签1,标签2"
+                    var wumiiCategories = <%- categories %>; //请用代码生成文章分类，分类名放在JSONArray中，如: ["分类1",     "分类2"]
+                    var wumiiSitePrefix = "<%= theme.wumii_siteprefix %>";
+                    var wumiiParams = "&num=6&mode=3&pf=JAVASCRIPT";
+                </script>
+	<% } %>
 </section>
 

@@ -2,7 +2,7 @@
 <script src="<%- config.root %>js/jquery.imagesloaded.min.js"></script>
 <script src="<%- config.root %>js/gallery.js"></script>
 
-<!-- add calendar widget -->
+<!-- calendar widget -->
 <% if (theme.widgets.indexOf('calendar') != -1){ %>
   <script src="<%- config.root %>js/calendar.js"></script>
   <script src="<%- config.root %>js/languages.js"></script>
@@ -17,11 +17,19 @@
   </script>
 <% } %>
 
-<!-- 添加『不蒜子』计数服务 -->
+<!-- 『不蒜子』计数服务 -->
 <script async src="http://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
+<!-- wumii关联推荐 -->
+<script type="text/javascript" src="http://widget.wumii.cn/ext/relatedItemsWidget"></script>
+
+<!-- 百度推荐 -->
 <%- partial('baidu_tongji') %>
+
+<!-- 返回顶部 -->
 <%- partial('to_top')%>
+
+
 <% if (theme.fancybox){ %>
 <link rel="stylesheet" href="<%- config.root %>fancybox/jquery.fancybox.css" media="screen" type="text/css">
 <script src="<%- config.root %>fancybox/jquery.fancybox.pack.js"></script>
