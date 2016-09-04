@@ -1,36 +1,19 @@
-.toc-article {
-	background: #eee;
-	padding: 1em;
-	position: relative;
-	left:2em;
-}
- 
-.toc-article .toc-title{
-	padding-bottom: 0.8em;
-	font-weight: bold;
-}
- 
-#toc {
-	line-height: 1.1em;
-	font-size: 0.8em;
-	float: right;
-	@media screen and (max-width: 600px){
-		display: none;
-	}
-}
- 
-#toc .toc {
-	padding: 0
-}
- 
-#toc li , .toc li {
-	list-style-type: none
-}
- 
-#toc ol {
-	margin: 0;
-}
- 
-#toc .toc-child {
-	padding-left: 1.5em
-}
+#toc
+  float right
+  font-size 0.8em
+  color color-link
+  margin 5px
+  position relative
+  left 50px
+  .toc
+    background-color #eee
+    list-style none
+    padding 10px
+  .toc-item,.toc-link
+    list-style none
+  ol
+    margin 0
+  @media screen and (max-width: 640px)
+    display none
+   
+  

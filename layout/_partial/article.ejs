@@ -15,9 +15,8 @@
     <div class="entry">
       <% if (item.excerpt && index){ %>
         <%- item.excerpt %>
-      <% } else { if (item.toc !== false) {%>
+      <% } else {%>
         <%- partial('post/toc') %>
-      <% } %>
         <%- item.content %>
       <% } %>
     </div>

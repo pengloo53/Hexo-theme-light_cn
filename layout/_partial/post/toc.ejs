@@ -1,4 +1,5 @@
-<div id="toc" class="toc-article">
-	<div class="toc-title">目录</div>
-	<%- toc(item.content, {list_number: false}) %>
-</div>
+<% if (item.toc != false){ %>
+    <div id="toc">
+        <%- toc(item.content, {list_number: false}) %>
+    </div>
+<% } %>

@@ -1,3 +1,11 @@
+<%
+    var duoshuo_short_name; 
+    if (typeof(site.data.config) != 'undefined' && site.data.config.duoshuo_short_name) { 
+        duoshuo_short_name = site.data.config.duoshuo_short_name;
+    }else{
+        duoshuo_short_name = theme.duoshuo_short_name;
+    }
+%>
 <div class="widget">
   <h3 class="title">最新评论</h3>
   	<!-- 多说最新评论 start -->
@@ -5,7 +13,7 @@
 	<!-- 多说最新评论 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"<%= theme.duoshuo_short_name %>"};
+	var duoshuoQuery = {short_name:"<%= duoshuo_short_name %>"};
 		(function() {
 			var ds = document.createElement('script');
 			ds.type = 'text/javascript';ds.async = true;

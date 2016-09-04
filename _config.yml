@@ -13,7 +13,7 @@ widgets:
 - search
 - category
 - calendar
-# - recent_comments
+- recent_comments
 - links
 - tagcloud
 # - tag
