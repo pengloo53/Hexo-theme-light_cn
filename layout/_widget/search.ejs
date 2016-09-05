@@ -1,6 +1,7 @@
  <div class="search">
-  <form action="//baidu.com/s" method="get" accept-charset="utf-8">
-    <input type="search" name="wd"results="0" placeholder="<%= __('search') %>">
-    <input type="hidden" name="wd" value="site:<%- config.url.replace(/^https?:\/\//, '') %>">
+  <form action="<%- url_for("search/index.html") %>" method="get" accept-charset="utf-8">
+<!--     <input type="search" name="wd"results="0" placeholder="<%= __('search') %>">
+    <input type="hidden" name="wd" value="site:<%- config.url.replace(/^https?:\/\//, '') %>"> -->
+     <input type="text" id="search" class="st-default-search-input" placeholder="<%= __('search') %>" style="height: 100%" />
   </form>
 </div> 
