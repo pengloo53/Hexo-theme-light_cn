@@ -12,6 +12,7 @@ submenu:
 widgets:
 - search
 - category
+- weixin
 - calendar
 - recent_comments
 - links
@@ -57,6 +58,11 @@ baidu_tuijian_id:
 calendar:
   language: zh-CN
   root: calendar
+
+# weixin
+weixin:
+  qrcode: /img/default/qrcode.jpg
+  alt: 欢迎关注，该账号供个人学习使用，偶尔做一些开发尝试，更新频率较低。
 
 # farbox
 fancybox: true
