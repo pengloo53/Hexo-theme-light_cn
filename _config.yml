@@ -5,6 +5,7 @@ menu:
   关于我: /resume
 
 submenu:
+  《Hexo小书》: /hexo
   订阅: /atom.xml
   留言: /customization
 

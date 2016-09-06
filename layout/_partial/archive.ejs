@@ -9,7 +9,6 @@ if (page.archive){
 %>
 
 <h2 class="archive-title<% if (page.tag){ %> tag<% } else if (page.category){ %> category<% } %>"><%= title %></h2>
-
 <div class="archive">
    <% page.posts.each(function(item){ %>
     <article class="<%= item.layout %>">
@@ -28,7 +27,7 @@ if (page.archive){
           <% } %>
         </header>
         <div class='archive-tags'>
-          <%- partial('post/tag',{item: item}) %>
+          <%- partial('post/tag', {item: item}) %>
         </div>
       </div>
     </article>
