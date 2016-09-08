@@ -1,14 +1,20 @@
 menu:
-  首页: /
-#  文集: /collection
-  归档: /archives
-  关于我: /resume
+  home: /
+  archives: /archives
+  books: /hexo
+  about: /resume
 
 submenu:
-  《Hexo小书》: /hexo
-  订阅: /atom.xml
-  留言: /customization
+  rss: /atom.xml
+  customization: /customization
 
+menu_icon:
+  home: home
+  archives: archive
+  books: book
+  about: user
+  rss: rss
+  customization: question-circle
 
 widgets:
 - search
@@ -19,8 +25,8 @@ widgets:
 - links
 - tagcloud
 # - tag
-# - archive
-- weibo
+- archive
+# - weibo
 
 excerpt_link: Read More
 comment_link: Comments

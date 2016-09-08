@@ -11,3 +11,10 @@ archive_b: "Archives: %s"
 page: Page %d
 recent_posts: Recent Posts
 calendar: Calendar
+
+home: Home
+archives: Archives
+books: Books
+about: About
+rss: Rss
+customization: Customization

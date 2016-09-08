@@ -1,6 +1,6 @@
 # Hexo-theme-light_cn（Hexo主题）
 
-> 该主题是基于hexo默认主题[hexo-theme-light](https://github.com/hexojs/hexo-theme-light)的一个china适用版。
+> 该主题基于hexo默认主题[hexo-theme-light](https://github.com/hexojs/hexo-theme-light)，最初修改为了适用`墙内`用户，后来逐渐形成自己的风格，并做了一些功能的集成。详细修改明细看这里[Blog留言讨论区 | LP's Blog](http://lupeng.me/customization/)
 
 [Demo](http://lupeng.me)
 
@@ -16,7 +16,7 @@
 修改手机界面Header样式：
 
 ![](source/img/README/003-1.png)
-            
+
 
 ## Release 1.2
 主要做了下列修改：
@@ -102,7 +102,7 @@ comment_link: Comments
 # header头像
 avatar: /img/default/avatar.png
 # header右侧图片展示
-ad: 
+ad:
 
 # 百度分享
 baidu_share: true
@@ -113,7 +113,7 @@ baidu_tongji: true
 # enable是否开启；height小挂件高度；url替换成自己的微博挂件地址，同步修改url中height的值
 weibo:
   height: 400
-  url: 
+  url:
 
 # 评论提供可以选择 duoshuo 或者 wumii，无需评论，此处不填就行。
 comment_provider: duoshuo
@@ -121,13 +121,13 @@ comment_provider: duoshuo
 relate_provider: baidu_tuijian
 
 # 多说，填写多说short_name
-duoshuo_short_name: 
+duoshuo_short_name:
 
 # wumii，填写网站域名，例如：http://lupeng.me
-wumii_siteprefix: 
+wumii_siteprefix:
 
 # 百度推荐，填写百度推荐ID，例如：hm_t_88638
-baidu_tuijian_id: 
+baidu_tuijian_id:
 
 # Calendar
 calendar:

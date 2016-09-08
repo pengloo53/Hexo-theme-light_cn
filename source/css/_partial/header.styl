@@ -1,7 +1,7 @@
 #header
-  text-shadow 0 0 1px #fff
   margin-bottom 25px
-  
+  i
+    margin-right 5px
   .avatar
     img
       border-radius 50%
@@ -37,27 +37,27 @@
   
   .header-nav
     border-bottom 1px solid #eee
+    padding 1em 0
     @media screen and (max-width: 640px)
       background-color #333
       border none
   
   .header-nav-content
-    ul
-      list-style none
-      display block
-      li
-        display inline-block
-        line-height 3em
-        &:hover
-          background-color #eee
-        a
-          margin 0 0.5em
-        @media screen and (max-width: 640px)
+    a
+      // color #fff
+      text-decoration none
+      padding 1.1em 0.8em
+      // background-color color-link
+      &:hover
+        background-color #eee
+        color color-link
+    @media screen and (max-width: 640px)
           a
-            color #fff
             font-size 0.8em
-          &:hover
-            background-color #333
+            color #fff
+            &:hover
+              background-color #333
+              color #aaa
             
 
   #main-nav
@@ -75,9 +75,9 @@
 
   a
     color #999
+    text-decoration none
     &:hover
       color color-link
-      text-decoration none
 
   h1
     font-weight bold

@@ -37,11 +37,16 @@
     <meta property="og:image" content="<%= config.cover %>"/>
   <% } %>
 
-  <link href="<%- config.root %>favicon.png" rel="icon">
   <link rel="alternate" href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- config.root %>atom.xml<% } %>" title="<%= config.title %>" type="application/atom+xml">
   <link rel="stylesheet" href="<%- config.root %>css/style.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <!-- wumiiVerification -->
   <meta name="wumiiVerification" content="fb50a101-84fe-4ca2-91a7-ae8cf792978b" />
-  <link rel="icon" type="image/x-icon" href="<%- config.root %>favicon.ico">
   <meta name="wumiiVerification" content="d73b5866-c390-4156-a4dd-51b526b5335e" />
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="<%- config.root %>favicon.ico">
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" href="<%- url_for('/font-awesome/css/font-awesome.min.css') %>">
+
 </head>

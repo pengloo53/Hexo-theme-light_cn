@@ -1,4 +1,4 @@
-icon-size = 32px
+icon-size = 24px
 icon-gap = 25px
 
 article
@@ -11,12 +11,12 @@ article
   &.page
     .icon
       &:before
-        content '\f005'
+        content '\f02d'
 
   &.post
     .icon
       &:before
-        content '\f016'
+        content '\f0f6'
 
   &.photo
     .icon
@@ -33,7 +33,7 @@ article
         &:after
           content '\f08e'
           color color-meta
-          font 12px font-icon
+          font 1.1em font-icon
           padding-left 10px
           vertical-align super
 
@@ -73,7 +73,7 @@ article
       cursor pointer
       &:before
         position absolute
-        font 24px/1 font-icon
+        font icon-size font-icon
         text-align center
         width 24px
         text-shadow 0 0 15px rgba(0,0,0,0.5)
@@ -106,7 +106,7 @@ article
         display none
       &:before
         position absolute
-        font 32px font-icon    
+        font icon-size font-icon    
         top 0
         left 0 
         width 32px
@@ -215,8 +215,7 @@ article
       &:before
         content '\f040'
         position absolute
-        font 1.3em font-icon
-        position absolute
+        font 1.1em font-icon
         left 0
         top 3px
 
@@ -254,18 +253,21 @@ article
     min-height 16px
     a
       color color-meta
+      line-height 1em
       &:hover
         color color-link
         text-decoration none
       &:before
-        font 1.1em font-icon
         padding-right 10px
         vertical-align middle
-
+        font 1.1em font-icon
+        position relative
+        bottom 1px
+        
       &.more-link
         &:before
           content '\f054'
-
+          
       &.comment-link
         &:before
           content '\f075'
