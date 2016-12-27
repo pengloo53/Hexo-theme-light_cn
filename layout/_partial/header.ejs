@@ -3,11 +3,11 @@
 		<% if (theme.avatar) { %>
 			<div class='avatar'>
 				<img src = "<%= theme.avatar %>">
-              </div>
+       </div>
 		<% } %>
 		<div class="header-div">
-		    <h1><a href="<%- config.root %>"><%= config.title %></a></h1>
-		    <h2><a href="<%- config.root %>"><% if (config.subtitle){ %><%= config.subtitle %><% } %></a></h2>
+		    <p class='title'><a href="<%- config.root %>"><%= config.title %></a></p>
+		    <p class='subtitle'><a href="<%- config.root %>"><% if (config.subtitle){ %><%= config.subtitle %><% } %></a></p>
 		</div>
 	</div>
 	<div class = "alignright col-two">
