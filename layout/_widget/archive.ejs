@@ -1,6 +1,6 @@
 <% if (site.posts.length){ %>
   <div class="widget tag">
     <h3 class="title">归档</h3>
-	<%- list_archives({format: "YYYY年MM月"}) %>
+	<%- list_archives({type: "yearly",format: "公元 YYYY 年"}) %>
   </div>
 <% } %>
