@@ -1,16 +1,19 @@
 menu:
   home: /
   archives: /archives
+  Node.js: /node
   books: /hexo
-  about: /resume
+  
 
 submenu:
   rss: /atom.xml
   customization: /customization
+  about: /about
 
 menu_icon:
   home: home
   archives: archive
+  Node.js: book
   books: book
   about: user
   rss: rss
@@ -21,7 +24,7 @@ widgets:
 - category
 - weixin
 - calendar
-- recent_comments
+# - recent_comments
 - links
 - tagcloud
 # - tag
@@ -48,7 +51,7 @@ weibo:
   url: 
 
 # 评论提供可以选择 duoshuo 或者 wumii，无需评论，此处不填就行。
-comment_provider: duoshuo
+comment_provider: wumii
 # 关联推荐提供可以选择baidu_tuijian 或者 wumii, 无需关联推荐，此处不填即可。
 relate_provider: baidu_tuijian
 
