@@ -24,7 +24,6 @@ widgets:
 - category
 - weixin
 - calendar
-# - recent_comments
 - links
 - tagcloud
 # - tag
