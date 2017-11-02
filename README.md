@@ -11,11 +11,11 @@
 2. 添加多说近期评论
 3. 添加日历云插件
 
-![](source/img/README/003-2.png)
+![](/img/README/003-2.png)
 
 修改手机界面Header样式：
 
-![](source/img/README/003-1.png)
+![](/img/README/003-1.png)
 
 
 ## Release 1.2

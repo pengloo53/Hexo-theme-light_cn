@@ -49,13 +49,10 @@ weibo:
   height: 600
   url: 
 
-# 评论提供可以选择 duoshuo 或者 wumii，无需评论，此处不填就行。
+# 评论提供可以选择 duoshuo 或者 wumii，无需评论，此处不填就行。 // duoshuo已经废除
 comment_provider: wumii
 # 关联推荐提供可以选择baidu_tuijian 或者 wumii, 无需关联推荐，此处不填即可。
 relate_provider: baidu_tuijian
-
-# 多说，填写多说short_name
-duoshuo_short_name: lupeng-test
 
 # wumii，填写网站域名，例如：http://lupeng.me
 wumii_siteprefix: http://lupeng.me
@@ -71,7 +68,7 @@ calendar:
 # weixin
 weixin:
   qrcode: /img/default/qrcode.jpg
-  alt: 欢迎关注，该账号供个人学习使用，偶尔做一些开发尝试，更新频率较低。
+  alt: 欢迎关注个人公众账号
 
 # farbox
 fancybox: true
