@@ -25,7 +25,7 @@ widgets:
 - weixin
 - calendar
 - links
-- tagcloud
+# - tagcloud
 # - tag
 - archive
 # - weibo
@@ -69,6 +69,9 @@ calendar:
 weixin:
   qrcode: /img/default/qrcode.jpg
   alt: 欢迎关注个人公众账号
+
+# busuanzi 不蒜子计数服务
+busuanzi: false
 
 # farbox
 fancybox: true
