@@ -28,7 +28,7 @@ widgets:
 # - tagcloud
 # - tag
 - archive
-- weibo
+# - weibo
 
 excerpt_link: Read More
 comment_link: Comments
