@@ -11,6 +11,8 @@
 1. 精简代码，免费的永远是最贵的去除多余的服务（大部分的免费的服务已经停止，所以说天下没有免费的午餐，再投入精力找类似免费的服务非常不值得）；
 2. 调整部分样式；
 
+![](source/img/README/003.png)
+
 ## Release 1.3
 添加一些功能模块：
 
@@ -20,7 +22,7 @@
 
 修改手机界面Header样式：
 
-![](/img/README/003-1.png)
+![](source/img/README/002.png)
 
 
 ## Release 1.2
@@ -29,7 +31,7 @@
 1. 整体风格更加简洁，修改多处页面细节，符合响应式设计；
 2. 修改文章显示宽度，main-col宽度改成760px（文章一行不宜过长）；
 3. 添加了[不蒜子计数器](http://service.ibruce.info/)；
-4. 设计个人简历页面，[Demo](http://lupeng.me/resume/)；
+4. 设计个人简历页面，[Demo](http://pengloo53.coding.me/resume/)；
 
 ![](http://7sbsl6.com1.z0.glb.clouddn.com/Hexo_theme_release_v1.2_1.png)
 
