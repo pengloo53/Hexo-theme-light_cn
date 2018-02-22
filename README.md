@@ -18,8 +18,6 @@
 2. 添加多说近期评论
 3. 添加日历云插件
 
-![](/img/README/003-2.png)
-
 修改手机界面Header样式：
 
 ![](/img/README/003-1.png)
@@ -117,36 +115,16 @@ baidu_share: true
 # 请到baidu_tongji.ejs中替换代码
 baidu_tongji: true
 
-# enable是否开启；height小挂件高度；url替换成自己的微博挂件地址，同步修改url中height的值
+# height小挂件高度；url替换成自己的微博挂件地址，同步修改url中height的值
 weibo:
   height: 400
   url:
-
-# 评论提供可以选择 duoshuo 或者 wumii，无需评论，此处不填就行。
-comment_provider: duoshuo
-# 关联推荐提供可以选择baidu_tuijian 或者 wumii, 无需关联推荐，此处不填即可。
-relate_provider: baidu_tuijian
-
-# 多说，填写多说short_name
-duoshuo_short_name:
-
-# wumii，填写网站域名，例如：http://lupeng.me
-wumii_siteprefix:
-
-# 百度推荐，填写百度推荐ID，例如：hm_t_88638
-baidu_tuijian_id:
 
 # Calendar
 calendar:
   language: zh-CN
   root: calendar
 ```
-
-- `avatar` 头像URL
-- `baidu_share` 百度分享
-- `weibo` 新浪微博
-- `duoshuo` 多说评论
-- `wumii` 无觅关联
 
 ## Features
 
