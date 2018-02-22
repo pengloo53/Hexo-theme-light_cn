@@ -1,8 +1,15 @@
 # Hexo-theme-light_cn（Hexo主题）
 
-> 该主题基于hexo默认主题[hexo-theme-light](https://github.com/hexojs/hexo-theme-light)，最初修改为了适用`墙内`用户，后来逐渐形成自己的风格，并做了一些功能的集成。详细修改明细看这里[Blog留言讨论区 | LP's Blog](http://lupeng.me/customization/)
+> 该主题基于hexo默认主题[hexo-theme-light](https://github.com/hexojs/hexo-theme-light)，最初修改为了适用`墙内`用户，后来逐渐形成自己的风格。
 
-[Demo](http://lupeng.me)
+[Demo](http://pengloo53.coding.me)
+
+## Release 1.4
+折腾了太长时间的主题，而忘了初心，我们是为了去写、去记录、去分享，才搭建的博客。太多的东西都是多余的。
+希望进一步精简主题，只保留**写作**该有的东西。
+
+1. 精简代码，免费的永远是最贵的去除多余的服务（大部分的免费的服务已经停止，所以说天下没有免费的午餐，再投入精力找类似免费的服务非常不值得）；
+2. 调整部分样式；
 
 ## Release 1.3
 添加一些功能模块：
