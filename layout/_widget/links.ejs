@@ -1,9 +1,9 @@
-<% if (site.data.links){ %>
+<% if (theme.links){ %>
   <div class="widget tag">
     <h3 class="title">友情链接</h3>
       <ul class="entry">
-        <% for (var i in site.data.links){ %>
-          <li class='link'><a href='<%- site.data.links[i] %>'><%= i %></a></li>
+        <% for (var i in theme.links){ %>
+          <li class='link'><a href='<%- theme.links[i] %>'><%= i %></a></li>
         <% } %>
       </ul>
   </div>

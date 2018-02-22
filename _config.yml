@@ -28,7 +28,7 @@ widgets:
 # - tagcloud
 # - tag
 - archive
-# - weibo
+- weibo
 
 excerpt_link: Read More
 comment_link: Comments
@@ -41,24 +41,13 @@ ad:
 # 百度分享
 baidu_share: true
 
-# 请到baidu_tongji.ejs中替换代码
+# 请到after_footer.ejs中替换百度统计代码
 baidu_tongji: true
 
-# height小挂件高度；url替换成自己的微博挂件地址，同步修改url中height的值
+# 微博: height小挂件高度；url替换成自己的微博挂件地址，同步修改url中height的值
 weibo:
   height: 600
-  url: 
-
-# 评论提供可以选择 duoshuo 或者 wumii，无需评论，此处不填就行。 // duoshuo已经废除
-comment_provider: wumii
-# 关联推荐提供可以选择baidu_tuijian 或者 wumii, 无需关联推荐，此处不填即可。
-relate_provider: baidu_tuijian
-
-# wumii，填写网站域名，例如：http://lupeng.me
-wumii_siteprefix: http://lupeng.me
-
-# 百度推荐，填写百度推荐ID，例如我的是：hm_t_88638
-baidu_tuijian_id: 
+  url: http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=600&fansRow=1&ptype=1&speed=0&skin=1&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=1934606495&verifier=a6769878&dpc=1
 
 # Calendar
 calendar:
@@ -70,8 +59,10 @@ weixin:
   qrcode: /img/default/qrcode.jpg
   alt: 欢迎关注个人公众账号
 
-# busuanzi 不蒜子计数服务
-busuanzi: false
+# links
+links:
+  晓晓博客: http://xiaoyun.farbox.com
+  图灵社区: http://www.ituring.com.cn/users/136808
 
 # farbox
 fancybox: true

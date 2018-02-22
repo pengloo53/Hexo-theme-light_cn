@@ -1,17 +1,6 @@
-<%
-    var weibo_height, weibo_url;
-    if(typeof(site.data.config) != 'undefined' && site.data.config.weibo){
-        weibo_height = site.data.config.weibo.height;
-        weibo_url = site.data.config.weibo.url;
-    }else if(theme.weibo_height && theme.weibo_url){
-        weibo_height = theme.weibo_height;
-        weibo_url = theme.weibo_url;
-    }
-%>
-
 <div class="widget">
   <h3 class="title">我的微博</h3>
     <ul class="weibo">
-	<iframe width="100%" height="<%= weibo_height%>" class="share_self"  frameborder="0" scrolling="no" src="<%= weibo_url %>"></iframe>
+	<iframe width="100%" height="<%= theme.weibo.height%>" class="share_self"  frameborder="0" scrolling="no" src="<%- theme.weibo.url %>"></iframe>
     </ul>
 </div>

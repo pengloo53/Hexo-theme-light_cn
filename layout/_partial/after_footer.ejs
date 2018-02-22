@@ -17,15 +17,7 @@
   </script>
 <% } %>
 
-<!-- 『不蒜子』计数服务 -->
-<% if(theme.busuanzi){ %>
-<script async src="http://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<% } %>
-
-<!-- wumii关联推荐 -->
-<script type="text/javascript" src="http://widget.wumii.cn/ext/relatedItemsWidget"></script>
-
-<!-- 百度推荐 -->
+<!-- 百度统计 -->
 <% if(theme.baidu_tongji){ %>
 	<script>
 	var _hmt = _hmt || [];
@@ -37,22 +29,6 @@
 	})();
 	</script>
 <% } %>
-
-<!-- 返回顶部 -->
-<div id="toTop">
-	<a href="#">▲</a>
-	<a href="#footer">▼</a>
-</div>
-
-<!-- 站内搜索-Swiftype -->
-<!-- <script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-  
-  _st('install','sC-iNFrvTTNtiXEVNwo1','2.0.0');
-</script> -->
 
 <!-- fancybox -->
 <% if (theme.fancybox){ %>
