@@ -4,7 +4,6 @@ menu:
   Node.js: /node
   books: /hexo
   
-
 submenu:
   rss: /atom.xml
   customization: /customization
@@ -66,3 +65,19 @@ links:
 
 # farbox
 fancybox: true
+
+# resume
+resume_photo: /assets/img/resume/resume.jpg
+resume:
+  name: 鲁 鹏
+  birth: 1989年5月
+  nation: 汉族
+  political_status: 中共党员
+  birth_place: 湖北省武汉市
+  domicile_place: 北京市
+  address: 北京市房山区北京理工大学良乡校区
+  postcode: 102488
+  email: decadent_prince@foxmail.com
+  phone: 18511xxxxxx
+  
+  

@@ -18,3 +18,15 @@ books: 电子书
 about: 关于我
 rss: 订阅
 customization: 留言
+
+name: 姓名
+birth: 出生年月
+birth_place: 出生地
+domicile_place: 户籍地
+address: 现居地址
+postcode: 邮编
+nation: 民族
+political_status: 政治面貌
+email: 邮箱
+phone: 电话
+highest_education: 最高学历

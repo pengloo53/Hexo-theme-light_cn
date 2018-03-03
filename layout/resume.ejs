@@ -3,57 +3,32 @@ layout: false
 ---
 
 <%- partial('_partial/head') %>
-    <body>
-        <header id="header">
-            <%- partial('_partial/header') %>
-        </header>
-        <div class="resume">
-            <h1 class="resume-title">
-                <%- page.title %>
-            </h1>
-            <div class="resume-left">
-                <img src="/assets/img/resume/resume.jpg" alt="photo">
+<body>
+    <header id="header">
+        <%- partial('_partial/header') %>
+    </header>
+    <div class="resume">
+        <h1 class="resume-title">
+            <%- page.title %>
+        </h1>
+        <div class="resume-left">
+            <img src="<%= theme.resume_photo %>" alt="photo">
+            <% for(var i in theme.resume){ if(theme.resume[i]){%>
                 <div class="clearfix"></div>
                 <div class="resume-txt">
-                    <div class="resume-little">姓名</div>
-                    <div class="resume-detail">鲁 鹏</div>
+                    <div class="resume-little"><%- __(i) %></div>
+                    <div class="resume-detail"><%= theme.resume[i] %></div>
                 </div>
-                <div class="clearfix"></div>
-                <div class="resume-txt">
-                    <div class="resume-little">出生年月</div>
-                    <div class="resume-detail">1989年5月</div>
-                </div>
-                <div class="clearfix"></div>
-                <div class="resume-txt">
-                    <div class="resume-little">籍贯</div>
-                    <div class="resume-detail">湖北省武汉市</div>
-                </div>
-                <div class="clearfix"></div>
-                <div class="resume-txt">
-                    <div class="resume-little">邮箱</div>
-                    <div class="resume-detail">decadent_prince@foxmail.com</div>
-                </div>
-                <div class="clearfix"></div>
-                <div class="resume-title2">教育经历</div>
-                <div class="resume-txt">
-                    <div class="resume-little">工科硕士</div>
-                    <div class="resume-detail">计算机应用技术，河北工业大学</div>
-                    <div class="resume-detail">2011.9-2014.3</div>
-                </div>
-                <div class="resume-txt">
-                    <div class="resume-little">理科学士</div>
-                    <div class="resume-detail">理论物理，河北工业大学</div>
-                    <div class="resume-detail">2007.9-2011.7</div>
-                </div>
-            </div>
-            <div class='resume-content'>
-                <div class="resume-entry">
-                    <%- page.content %>
-                </div>
-            </div>
-            <div class="clearfix"></div>
+            <% }} %>
         </div>
-        <footer id="footer">
-            <%- partial('_partial/footer') %>
-        </footer>
-        <%- partial('_partial/after_footer') %>
+        <div class='resume-content'>
+            <div class="resume-entry">
+                <%- page.content %>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <footer id="footer">
+        <%- partial('_partial/footer') %>
+    </footer>
+    <%- partial('_partial/after_footer') %>
