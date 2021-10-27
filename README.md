@@ -2,7 +2,7 @@
 
 > 该主题基于hexo默认主题[hexo-theme-light](https://github.com/hexojs/hexo-theme-light)，最初修改为了适用`墙内`用户，后来逐渐形成自己的风格。
 
-[Demo](http://pengloo53.coding.me)
+[Demo](https://serverless-page-bucket-xyt1gs3f-1252176826.cos-website.ap-hongkong.myqcloud.com/)
 
 ## Release 2.0
 折腾了太长时间的主题，而忘了初心，我们是为了去写、去记录、去分享，才搭建的博客。太多的东西都是多余的。
